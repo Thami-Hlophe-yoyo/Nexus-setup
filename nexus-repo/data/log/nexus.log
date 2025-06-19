@@ -1,0 +1,1248 @@
+2025-06-12 19:50:48,484+0000 INFO  [main]  *SYSTEM org.sonatype.nexus.bootstrap.application.SonatypeNexusRepositoryApplication - Starting SonatypeNexusRepositoryApplication v3.81.1-01 using Java 17.0.15 with PID 1 (/opt/sonatype/nexus/bin/sonatype-nexus-repository-3.81.1-01.jar started by nexus in /opt/sonatype/nexus)
+2025-06-12 19:50:48,494+0000 INFO  [main]  *SYSTEM org.sonatype.nexus.bootstrap.application.SonatypeNexusRepositoryApplication - No active profile set, falling back to 1 default profile: "default"
+2025-06-12 19:50:52,369+0000 INFO  [main]  *SYSTEM org.sonatype.nexus.spring.application.NexusProperties - nexus.properties: {ssl.etc=/opt/sonatype/nexus/etc/ssl, application-host=0.0.0.0, nexus-edition=nexus-pro-edition, nexus-context-path=/, karaf.home=/opt/sonatype/nexus, nexus.http.denyframe.enabled=true, karaf.etc=/opt/sonatype/nexus/etc/karaf, nexus.jwt.enabled=false, nexus.repository.proxy.enabled=true, nexus-args=/opt/sonatype/nexus/etc/jetty/jetty.xml,/opt/sonatype/nexus/etc/jetty/jetty-http.xml,/opt/sonatype/nexus/etc/jetty/jetty-requestlog.xml, nexus.session.enabled=true, application-port=8081, nexus.scripts.allowCreation=true, karaf.data=/nexus-data, nexus.repository.default=central, nexus.https.port=8443, logback.etc=/opt/sonatype/nexus/etc/logback, karaf.instances=/opt/sonatype/nexus/instances, fabric.etc=/opt/sonatype/nexus/etc/fabric, nexus.security.realm=default, nexus.http.port=8081, nexus-features=nexus-pro-feature, nexus.security.user.admin.password=admin123, nexus.onboarding.enabled=true, jetty.etc=/opt/sonatype/nexus/etc/jetty, karaf.base=/opt/sonatype/nexus, nexus.security.randompassword=false, nexus.data.dir=/nexus-data}
+2025-06-12 19:50:52,393+0000 INFO  [main]  *SYSTEM org.sonatype.nexus.bootstrap.edition.CommunityNexusEdition - Loading Community Edition
+2025-06-12 19:50:52,426+0000 INFO  [main]  *SYSTEM org.sonatype.nexus.bootstrap.application.Launcher - Java: 17.0.15, OpenJDK 64-Bit Server VM, Red Hat, Inc., 17.0.15+6-LTS
+2025-06-12 19:50:52,428+0000 INFO  [main]  *SYSTEM org.sonatype.nexus.bootstrap.application.Launcher - OS: Linux, 6.6.87.1-microsoft-standard-WSL2, amd64
+2025-06-12 19:50:52,429+0000 INFO  [main]  *SYSTEM org.sonatype.nexus.bootstrap.application.Launcher - User: nexus, en, /opt/sonatype/nexus
+2025-06-12 19:50:52,431+0000 INFO  [main]  *SYSTEM org.sonatype.nexus.bootstrap.application.Launcher - CWD: /opt/sonatype/nexus
+2025-06-12 19:50:52,476+0000 INFO  [main]  *SYSTEM org.sonatype.nexus.bootstrap.application.Launcher - TMP: /nexus-data/tmp
+2025-06-12 19:50:55,127+0000 INFO  [main]  *SYSTEM org.sonatype.nexus.bootstrap.jetty.JettyServer - Starting
+2025-06-12 19:50:55,182+0000 INFO  [main]  *SYSTEM org.sonatype.nexus.bootstrap.jetty.JettyServer - Applying configuration: file:/opt/sonatype/nexus/etc/jetty/jetty.xml
+2025-06-12 19:50:56,250+0000 INFO  [main]  *SYSTEM org.sonatype.nexus.bootstrap.jetty.JettyServer - Applying configuration: file:/opt/sonatype/nexus/etc/jetty/jetty-http.xml
+2025-06-12 19:50:56,343+0000 INFO  [main]  *SYSTEM org.sonatype.nexus.bootstrap.jetty.JettyServer - Applying configuration: file:/opt/sonatype/nexus/etc/jetty/jetty-requestlog.xml
+2025-06-12 19:50:56,418+0000 INFO  [jetty-main-1]  *SYSTEM org.sonatype.nexus.bootstrap.jetty.JettyServer - Starting: oejs.Server@5fdd97c1{STOPPED}[12.0.17,sto=5000]
+2025-06-12 19:50:56,420+0000 INFO  [main]  *SYSTEM org.sonatype.nexus.bootstrap.application.SonatypeNexusRepositoryApplication - Started SonatypeNexusRepositoryApplication in 9.471 seconds (process running for 13.457)
+2025-06-12 19:50:56,439+0000 INFO  [jetty-main-1]  *SYSTEM org.eclipse.jetty.server.Server - jetty-12.0.17; built: 2025-03-03T13:15:05.903Z; git: 14d19c268e4cb09afc312b5255a4cbb7a95c5cb6; jvm 17.0.15+6-LTS
+2025-06-12 19:50:57,047+0000 WARN  [jetty-main-1]  *SYSTEM org.eclipse.jetty.util.DeprecationWarning - Using @Deprecated Class org.sonatype.nexus.extender.NexusServletContextListener
+2025-06-12 19:50:57,099+0000 INFO  [jetty-main-1]  *SYSTEM org.eclipse.jetty.session.DefaultSessionIdManager - Session workerName=node0
+2025-06-12 19:50:57,876+0000 INFO  [jetty-main-1]  *SYSTEM org.sonatype.nexus.extender.guice.modules.DataAccessModule - Binding DAO classes to mybatis
+2025-06-12 19:50:58,703+0000 INFO  [jetty-main-1]  *SYSTEM org.sonatype.nexus.extender.sisu.modules.SisuAggregatedIndexModule - Binding sisu aggregated index classes
+2025-06-12 19:51:05,783+0000 INFO  [jetty-main-1]  *SYSTEM org.sonatype.nexus.internal.metrics.MetricsModule - Metrics support configured
+2025-06-12 19:51:14,567+0000 INFO  [jetty-main-1]  *SYSTEM org.sonatype.nexus.extender.guice.modules.MetricsRegistryModule - MetricsRegistryModule configured
+2025-06-12 19:51:23,941+0000 WARN  [Timer-0]  *SYSTEM java.util.prefs - Could not lock User prefs.  Unix error code 2.
+2025-06-12 19:51:23,943+0000 WARN  [Timer-0]  *SYSTEM java.util.prefs - Couldn't flush user prefs: java.util.prefs.BackingStoreException: Couldn't get file lock.
+2025-06-12 19:51:28,168+0000 ERROR [ForkJoinPool.commonPool-worker-1]  *SYSTEM org.sonatype.nexus.internal.node.datastore.LocalNodeAccess - Failed to determine hostname, using nodeId instead.
+2025-06-12 19:51:28,688+0000 INFO  [jetty-main-1]  *SYSTEM org.apache.shiro.nexus.NexusWebSessionManager - Global session timeout: 1800000 ms
+2025-06-12 19:51:28,689+0000 INFO  [jetty-main-1]  *SYSTEM org.apache.shiro.nexus.NexusWebSessionManager - Session-cookie prototype: name=NXSESSIONID, secure=true
+2025-06-12 19:51:28,898+0000 INFO  [jetty-main-1]  *SYSTEM org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2025-06-12 19:51:51,492+0000 INFO  [jetty-main-1]  *SYSTEM org.sonatype.nexus.extender.NexusServletContextListener - Running lifecycle phases [KERNEL, STORAGE, RESTORE, UPGRADE, SCHEMAS, EVENTS, SECURITY, SERVICES, REPOSITORIES, CAPABILITIES, TASKS]
+2025-06-12 19:51:51,494+0000 INFO  [jetty-main-1]  *SYSTEM org.sonatype.nexus.extender.guice.NexusLifecycleManager - Indexing lifecycle managed components up to phase TASKS
+2025-06-12 19:51:51,496+0000 INFO  [jetty-main-1]  *SYSTEM org.sonatype.nexus.extender.guice.NexusLifecycleManager - Start KERNEL
+2025-06-12 19:51:51,529+0000 ERROR [jetty-main-1]  *SYSTEM org.sonatype.nexus.bootstrap.entrypoint.configuration.ApplicationDirectoriesImpl - Failed to create directory: /nexus-data/etc/logback
+2025-06-12 19:51:51,537+0000 ERROR [jetty-main-1]  *SYSTEM org.sonatype.nexus.extender.NexusServletContextListener - Failed to initialize context
+com.google.inject.ProvisionException: Unable to provision, see the following errors:
+
+1) [Guice/ErrorInCustomProvider]: RuntimeException: AccessDeniedException: /nexus-data/etc/logback
+  at nested:/opt/sonatype/nexus/bin/sonatype-nexus-repository-3.81.1-01.jar/!BOOT-INF/lib/nexus-base-3.81.1-01.jar!/
+      \_ installed by: NexusExtenderModule -> SisuAggregatedIndexModule -> SisuAggregatedIndexModule$1
+  while locating LogbackLoggerOverrides
+  while locating Object annotated with *
+  at LocatorWiring
+  at LogbackLogManager.<init>(LogbackLogManager.java:107)
+      \_ for 3rd parameter
+  at nested:/opt/sonatype/nexus/bin/sonatype-nexus-repository-3.81.1-01.jar/!BOOT-INF/lib/nexus-base-3.81.1-01.jar!/
+      \_ installed by: NexusExtenderModule -> SisuAggregatedIndexModule -> SisuAggregatedIndexModule$1
+  while locating LogbackLogManager
+  while locating Object annotated with *
+
+Learn more:
+  https://github.com/google/guice/wiki/ERROR_IN_CUSTOM_PROVIDER
+
+1 error
+
+======================
+Full classname legend:
+======================
+AccessDeniedException:       "java.nio.file.AccessDeniedException"
+LocatorWiring:               "org.eclipse.sisu.wire.LocatorWiring"
+LogbackLogManager:           "org.sonatype.nexus.internal.log.LogbackLogManager"
+LogbackLoggerOverrides:      "org.sonatype.nexus.internal.log.overrides.file.LogbackLoggerOverrides"
+NexusExtenderModule:         "org.sonatype.nexus.extender.guice.modules.NexusExtenderModule"
+SisuAggregatedIndexModule:   "org.sonatype.nexus.extender.sisu.modules.SisuAggregatedIndexModule"
+SisuAggregatedIndexModule$1: "org.sonatype.nexus.extender.sisu.modules.SisuAggregatedIndexModule$1"
+========================
+End of classname legend:
+========================
+
+	at com.google.inject.internal.InternalProvisionException.toProvisionException(InternalProvisionException.java:251)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1151)
+	at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:83)
+	at org.sonatype.nexus.extender.guice.NexusLifecycleManager.to(NexusLifecycleManager.java:135)
+	at org.sonatype.nexus.extender.NexusServletContextListener.moveToPhase(NexusServletContextListener.java:166)
+	at org.sonatype.nexus.extender.NexusServletContextListener.contextInitialized(NexusServletContextListener.java:101)
+	at org.eclipse.jetty.ee8.nested.ContextHandler.callContextInitialized(ContextHandler.java:786)
+	at org.eclipse.jetty.ee8.servlet.ServletContextHandler.callContextInitialized(ServletContextHandler.java:516)
+	at org.eclipse.jetty.ee8.nested.ContextHandler.contextInitialized(ContextHandler.java:735)
+	at org.eclipse.jetty.ee8.servlet.ServletHandler.initialize(ServletHandler.java:629)
+	at org.eclipse.jetty.ee8.servlet.ServletContextHandler.startContext(ServletContextHandler.java:311)
+	at org.eclipse.jetty.ee8.webapp.WebAppContext.startWebapp(WebAppContext.java:1195)
+	at org.eclipse.jetty.ee8.webapp.WebAppContext.startContext(WebAppContext.java:1165)
+	at org.eclipse.jetty.ee8.nested.ContextHandler.doStartInContext(ContextHandler.java:626)
+	at org.eclipse.jetty.server.handler.ContextHandler$ScopedContext.call(ContextHandler.java:1450)
+	at org.eclipse.jetty.ee8.nested.ContextHandler.doStart(ContextHandler.java:615)
+	at org.eclipse.jetty.ee8.servlet.ServletContextHandler.doStart(ServletContextHandler.java:243)
+	at org.eclipse.jetty.ee8.webapp.WebAppContext.doStart(WebAppContext.java:502)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:93)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:113)
+	at org.eclipse.jetty.server.Handler$Abstract.doStart(Handler.java:491)
+	at org.eclipse.jetty.server.handler.ContextHandler.lambda$doStart$0(ContextHandler.java:757)
+	at org.eclipse.jetty.server.handler.ContextHandler$ScopedContext.call(ContextHandler.java:1456)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:757)
+	at org.eclipse.jetty.ee8.nested.ContextHandler$CoreContextHandler.doStart(ContextHandler.java:2290)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:93)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:120)
+	at org.eclipse.jetty.server.Handler$Abstract.doStart(Handler.java:491)
+	at io.dropwizard.metrics.jetty12.AbstractInstrumentedHandler.doStart(AbstractInstrumentedHandler.java:149)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:93)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169)
+	at org.eclipse.jetty.server.Server.start(Server.java:641)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:120)
+	at org.eclipse.jetty.server.Handler$Abstract.doStart(Handler.java:491)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:582)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:93)
+	at org.sonatype.nexus.bootstrap.jetty.JettyServer$JettyMainThread.run(JettyServer.java:286)
+Caused by: java.lang.RuntimeException: java.nio.file.AccessDeniedException: /nexus-data/etc/logback
+	at org.sonatype.nexus.bootstrap.entrypoint.configuration.ApplicationDirectoriesImpl.mkdir(ApplicationDirectoriesImpl.java:123)
+	at org.sonatype.nexus.bootstrap.entrypoint.configuration.ApplicationDirectoriesImpl.resolve(ApplicationDirectoriesImpl.java:141)
+	at org.sonatype.nexus.bootstrap.entrypoint.configuration.ApplicationDirectoriesImpl.getWorkDirectory(ApplicationDirectoriesImpl.java:102)
+	at org.sonatype.nexus.bootstrap.entrypoint.configuration.ApplicationDirectoriesImpl.getWorkDirectory(ApplicationDirectoriesImpl.java:107)
+	at org.sonatype.nexus.internal.log.overrides.LogbackLoggerOverridesSupport.<init>(LogbackLoggerOverridesSupport.java:52)
+	at org.sonatype.nexus.internal.log.overrides.file.LogbackLoggerOverrides.<init>(LogbackLoggerOverrides.java:51)
+	at org.sonatype.nexus.internal.log.overrides.file.LogbackLoggerOverrides$$EnhancerByGuice$$b3dec4f.<init>(<generated>)
+	at org.sonatype.nexus.internal.log.overrides.file.LogbackLoggerOverrides$$EnhancerByGuice$$b3dec4f.GUICE$TRAMPOLINE(<generated>)
+	at com.google.inject.internal.ProxyFactory$ProxyConstructor.newInstance(ProxyFactory.java:183)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:91)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:300)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
+	at com.google.inject.internal.SingletonScope$1.get(SingletonScope.java:169)
+	at com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:45)
+	at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:60)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1148)
+	at org.eclipse.sisu.wire.BeanProviders$7.get(BeanProviders.java:169)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:86)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:57)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:60)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:47)
+	at com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:40)
+	at com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:60)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:113)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:91)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:300)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
+	at com.google.inject.internal.SingletonScope$1.get(SingletonScope.java:169)
+	at com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:45)
+	at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:60)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1148)
+	... 37 common frames omitted
+Caused by: java.nio.file.AccessDeniedException: /nexus-data/etc/logback
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:397)
+	at java.base/java.nio.file.Files.createDirectory(Files.java:700)
+	at java.base/java.nio.file.Files.createAndCheckIsDirectory(Files.java:807)
+	at java.base/java.nio.file.Files.createDirectories(Files.java:793)
+	at org.sonatype.nexus.bootstrap.entrypoint.configuration.DirectoryHelper.mkdir(DirectoryHelper.java:32)
+	at org.sonatype.nexus.bootstrap.entrypoint.configuration.ApplicationDirectoriesImpl.mkdir(ApplicationDirectoriesImpl.java:117)
+	... 68 common frames omitted
+2025-06-12 19:51:51,636+0000 WARN  [jetty-main-1]  *SYSTEM org.eclipse.jetty.ee8.webapp.WebAppContext - Failed startup of context oeje8w.WebAppContext@771157ed{Sonatype Nexus,/,null,false}
+com.google.inject.ProvisionException: Unable to provision, see the following errors:
+
+1) [Guice/ErrorInCustomProvider]: RuntimeException: AccessDeniedException: /nexus-data/etc/logback
+  at nested:/opt/sonatype/nexus/bin/sonatype-nexus-repository-3.81.1-01.jar/!BOOT-INF/lib/nexus-base-3.81.1-01.jar!/
+      \_ installed by: NexusExtenderModule -> SisuAggregatedIndexModule -> SisuAggregatedIndexModule$1
+  while locating LogbackLoggerOverrides
+  while locating Object annotated with *
+  at LocatorWiring
+  at LogbackLogManager.<init>(LogbackLogManager.java:107)
+      \_ for 3rd parameter
+  at nested:/opt/sonatype/nexus/bin/sonatype-nexus-repository-3.81.1-01.jar/!BOOT-INF/lib/nexus-base-3.81.1-01.jar!/
+      \_ installed by: NexusExtenderModule -> SisuAggregatedIndexModule -> SisuAggregatedIndexModule$1
+  while locating LogbackLogManager
+  while locating Object annotated with *
+
+Learn more:
+  https://github.com/google/guice/wiki/ERROR_IN_CUSTOM_PROVIDER
+
+1 error
+
+======================
+Full classname legend:
+======================
+AccessDeniedException:       "java.nio.file.AccessDeniedException"
+LocatorWiring:               "org.eclipse.sisu.wire.LocatorWiring"
+LogbackLogManager:           "org.sonatype.nexus.internal.log.LogbackLogManager"
+LogbackLoggerOverrides:      "org.sonatype.nexus.internal.log.overrides.file.LogbackLoggerOverrides"
+NexusExtenderModule:         "org.sonatype.nexus.extender.guice.modules.NexusExtenderModule"
+SisuAggregatedIndexModule:   "org.sonatype.nexus.extender.sisu.modules.SisuAggregatedIndexModule"
+SisuAggregatedIndexModule$1: "org.sonatype.nexus.extender.sisu.modules.SisuAggregatedIndexModule$1"
+========================
+End of classname legend:
+========================
+
+	at com.google.inject.internal.InternalProvisionException.toProvisionException(InternalProvisionException.java:251)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1151)
+	at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:83)
+	at org.sonatype.nexus.extender.guice.NexusLifecycleManager.to(NexusLifecycleManager.java:135)
+	at org.sonatype.nexus.extender.NexusServletContextListener.moveToPhase(NexusServletContextListener.java:166)
+	at org.sonatype.nexus.extender.NexusServletContextListener.contextInitialized(NexusServletContextListener.java:101)
+	at org.eclipse.jetty.ee8.nested.ContextHandler.callContextInitialized(ContextHandler.java:786)
+	at org.eclipse.jetty.ee8.servlet.ServletContextHandler.callContextInitialized(ServletContextHandler.java:516)
+	at org.eclipse.jetty.ee8.nested.ContextHandler.contextInitialized(ContextHandler.java:735)
+	at org.eclipse.jetty.ee8.servlet.ServletHandler.initialize(ServletHandler.java:629)
+	at org.eclipse.jetty.ee8.servlet.ServletContextHandler.startContext(ServletContextHandler.java:311)
+	at org.eclipse.jetty.ee8.webapp.WebAppContext.startWebapp(WebAppContext.java:1195)
+	at org.eclipse.jetty.ee8.webapp.WebAppContext.startContext(WebAppContext.java:1165)
+	at org.eclipse.jetty.ee8.nested.ContextHandler.doStartInContext(ContextHandler.java:626)
+	at org.eclipse.jetty.server.handler.ContextHandler$ScopedContext.call(ContextHandler.java:1450)
+	at org.eclipse.jetty.ee8.nested.ContextHandler.doStart(ContextHandler.java:615)
+	at org.eclipse.jetty.ee8.servlet.ServletContextHandler.doStart(ServletContextHandler.java:243)
+	at org.eclipse.jetty.ee8.webapp.WebAppContext.doStart(WebAppContext.java:502)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:93)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:113)
+	at org.eclipse.jetty.server.Handler$Abstract.doStart(Handler.java:491)
+	at org.eclipse.jetty.server.handler.ContextHandler.lambda$doStart$0(ContextHandler.java:757)
+	at org.eclipse.jetty.server.handler.ContextHandler$ScopedContext.call(ContextHandler.java:1456)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:757)
+	at org.eclipse.jetty.ee8.nested.ContextHandler$CoreContextHandler.doStart(ContextHandler.java:2290)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:93)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:120)
+	at org.eclipse.jetty.server.Handler$Abstract.doStart(Handler.java:491)
+	at io.dropwizard.metrics.jetty12.AbstractInstrumentedHandler.doStart(AbstractInstrumentedHandler.java:149)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:93)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169)
+	at org.eclipse.jetty.server.Server.start(Server.java:641)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:120)
+	at org.eclipse.jetty.server.Handler$Abstract.doStart(Handler.java:491)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:582)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:93)
+	at org.sonatype.nexus.bootstrap.jetty.JettyServer$JettyMainThread.run(JettyServer.java:286)
+Caused by: java.lang.RuntimeException: java.nio.file.AccessDeniedException: /nexus-data/etc/logback
+	at org.sonatype.nexus.bootstrap.entrypoint.configuration.ApplicationDirectoriesImpl.mkdir(ApplicationDirectoriesImpl.java:123)
+	at org.sonatype.nexus.bootstrap.entrypoint.configuration.ApplicationDirectoriesImpl.resolve(ApplicationDirectoriesImpl.java:141)
+	at org.sonatype.nexus.bootstrap.entrypoint.configuration.ApplicationDirectoriesImpl.getWorkDirectory(ApplicationDirectoriesImpl.java:102)
+	at org.sonatype.nexus.bootstrap.entrypoint.configuration.ApplicationDirectoriesImpl.getWorkDirectory(ApplicationDirectoriesImpl.java:107)
+	at org.sonatype.nexus.internal.log.overrides.LogbackLoggerOverridesSupport.<init>(LogbackLoggerOverridesSupport.java:52)
+	at org.sonatype.nexus.internal.log.overrides.file.LogbackLoggerOverrides.<init>(LogbackLoggerOverrides.java:51)
+	at org.sonatype.nexus.internal.log.overrides.file.LogbackLoggerOverrides$$EnhancerByGuice$$b3dec4f.<init>(<generated>)
+	at org.sonatype.nexus.internal.log.overrides.file.LogbackLoggerOverrides$$EnhancerByGuice$$b3dec4f.GUICE$TRAMPOLINE(<generated>)
+	at com.google.inject.internal.ProxyFactory$ProxyConstructor.newInstance(ProxyFactory.java:183)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:91)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:300)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
+	at com.google.inject.internal.SingletonScope$1.get(SingletonScope.java:169)
+	at com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:45)
+	at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:60)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1148)
+	at org.eclipse.sisu.wire.BeanProviders$7.get(BeanProviders.java:169)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:86)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:57)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:60)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:47)
+	at com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:40)
+	at com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:60)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:113)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:91)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:300)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
+	at com.google.inject.internal.SingletonScope$1.get(SingletonScope.java:169)
+	at com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:45)
+	at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:60)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1148)
+	... 37 common frames omitted
+Caused by: java.nio.file.AccessDeniedException: /nexus-data/etc/logback
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:397)
+	at java.base/java.nio.file.Files.createDirectory(Files.java:700)
+	at java.base/java.nio.file.Files.createAndCheckIsDirectory(Files.java:807)
+	at java.base/java.nio.file.Files.createDirectories(Files.java:793)
+	at org.sonatype.nexus.bootstrap.entrypoint.configuration.DirectoryHelper.mkdir(DirectoryHelper.java:32)
+	at org.sonatype.nexus.bootstrap.entrypoint.configuration.ApplicationDirectoriesImpl.mkdir(ApplicationDirectoriesImpl.java:117)
+	... 68 common frames omitted
+2025-06-12 19:51:51,657+0000 ERROR [jetty-main-1]  *SYSTEM org.sonatype.nexus.bootstrap.jetty.JettyServer - Failed to start
+com.google.inject.ProvisionException: Unable to provision, see the following errors:
+
+1) [Guice/ErrorInCustomProvider]: RuntimeException: AccessDeniedException: /nexus-data/etc/logback
+  at nested:/opt/sonatype/nexus/bin/sonatype-nexus-repository-3.81.1-01.jar/!BOOT-INF/lib/nexus-base-3.81.1-01.jar!/
+      \_ installed by: NexusExtenderModule -> SisuAggregatedIndexModule -> SisuAggregatedIndexModule$1
+  while locating LogbackLoggerOverrides
+  while locating Object annotated with *
+  at LocatorWiring
+  at LogbackLogManager.<init>(LogbackLogManager.java:107)
+      \_ for 3rd parameter
+  at nested:/opt/sonatype/nexus/bin/sonatype-nexus-repository-3.81.1-01.jar/!BOOT-INF/lib/nexus-base-3.81.1-01.jar!/
+      \_ installed by: NexusExtenderModule -> SisuAggregatedIndexModule -> SisuAggregatedIndexModule$1
+  while locating LogbackLogManager
+  while locating Object annotated with *
+
+Learn more:
+  https://github.com/google/guice/wiki/ERROR_IN_CUSTOM_PROVIDER
+
+1 error
+
+======================
+Full classname legend:
+======================
+AccessDeniedException:       "java.nio.file.AccessDeniedException"
+LocatorWiring:               "org.eclipse.sisu.wire.LocatorWiring"
+LogbackLogManager:           "org.sonatype.nexus.internal.log.LogbackLogManager"
+LogbackLoggerOverrides:      "org.sonatype.nexus.internal.log.overrides.file.LogbackLoggerOverrides"
+NexusExtenderModule:         "org.sonatype.nexus.extender.guice.modules.NexusExtenderModule"
+SisuAggregatedIndexModule:   "org.sonatype.nexus.extender.sisu.modules.SisuAggregatedIndexModule"
+SisuAggregatedIndexModule$1: "org.sonatype.nexus.extender.sisu.modules.SisuAggregatedIndexModule$1"
+========================
+End of classname legend:
+========================
+
+	at com.google.inject.internal.InternalProvisionException.toProvisionException(InternalProvisionException.java:251)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1151)
+	at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:83)
+	at org.sonatype.nexus.extender.guice.NexusLifecycleManager.to(NexusLifecycleManager.java:135)
+	at org.sonatype.nexus.extender.NexusServletContextListener.moveToPhase(NexusServletContextListener.java:166)
+	at org.sonatype.nexus.extender.NexusServletContextListener.contextInitialized(NexusServletContextListener.java:101)
+	at org.eclipse.jetty.ee8.nested.ContextHandler.callContextInitialized(ContextHandler.java:786)
+	at org.eclipse.jetty.ee8.servlet.ServletContextHandler.callContextInitialized(ServletContextHandler.java:516)
+	at org.eclipse.jetty.ee8.nested.ContextHandler.contextInitialized(ContextHandler.java:735)
+	at org.eclipse.jetty.ee8.servlet.ServletHandler.initialize(ServletHandler.java:629)
+	at org.eclipse.jetty.ee8.servlet.ServletContextHandler.startContext(ServletContextHandler.java:311)
+	at org.eclipse.jetty.ee8.webapp.WebAppContext.startWebapp(WebAppContext.java:1195)
+	at org.eclipse.jetty.ee8.webapp.WebAppContext.startContext(WebAppContext.java:1165)
+	at org.eclipse.jetty.ee8.nested.ContextHandler.doStartInContext(ContextHandler.java:626)
+	at org.eclipse.jetty.server.handler.ContextHandler$ScopedContext.call(ContextHandler.java:1450)
+	at org.eclipse.jetty.ee8.nested.ContextHandler.doStart(ContextHandler.java:615)
+	at org.eclipse.jetty.ee8.servlet.ServletContextHandler.doStart(ServletContextHandler.java:243)
+	at org.eclipse.jetty.ee8.webapp.WebAppContext.doStart(WebAppContext.java:502)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:93)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:113)
+	at org.eclipse.jetty.server.Handler$Abstract.doStart(Handler.java:491)
+	at org.eclipse.jetty.server.handler.ContextHandler.lambda$doStart$0(ContextHandler.java:757)
+	at org.eclipse.jetty.server.handler.ContextHandler$ScopedContext.call(ContextHandler.java:1456)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:757)
+	at org.eclipse.jetty.ee8.nested.ContextHandler$CoreContextHandler.doStart(ContextHandler.java:2290)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:93)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:120)
+	at org.eclipse.jetty.server.Handler$Abstract.doStart(Handler.java:491)
+	at io.dropwizard.metrics.jetty12.AbstractInstrumentedHandler.doStart(AbstractInstrumentedHandler.java:149)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:93)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169)
+	at org.eclipse.jetty.server.Server.start(Server.java:641)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:120)
+	at org.eclipse.jetty.server.Handler$Abstract.doStart(Handler.java:491)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:582)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:93)
+	at org.sonatype.nexus.bootstrap.jetty.JettyServer$JettyMainThread.run(JettyServer.java:286)
+Caused by: java.lang.RuntimeException: java.nio.file.AccessDeniedException: /nexus-data/etc/logback
+	at org.sonatype.nexus.bootstrap.entrypoint.configuration.ApplicationDirectoriesImpl.mkdir(ApplicationDirectoriesImpl.java:123)
+	at org.sonatype.nexus.bootstrap.entrypoint.configuration.ApplicationDirectoriesImpl.resolve(ApplicationDirectoriesImpl.java:141)
+	at org.sonatype.nexus.bootstrap.entrypoint.configuration.ApplicationDirectoriesImpl.getWorkDirectory(ApplicationDirectoriesImpl.java:102)
+	at org.sonatype.nexus.bootstrap.entrypoint.configuration.ApplicationDirectoriesImpl.getWorkDirectory(ApplicationDirectoriesImpl.java:107)
+	at org.sonatype.nexus.internal.log.overrides.LogbackLoggerOverridesSupport.<init>(LogbackLoggerOverridesSupport.java:52)
+	at org.sonatype.nexus.internal.log.overrides.file.LogbackLoggerOverrides.<init>(LogbackLoggerOverrides.java:51)
+	at org.sonatype.nexus.internal.log.overrides.file.LogbackLoggerOverrides$$EnhancerByGuice$$b3dec4f.<init>(<generated>)
+	at org.sonatype.nexus.internal.log.overrides.file.LogbackLoggerOverrides$$EnhancerByGuice$$b3dec4f.GUICE$TRAMPOLINE(<generated>)
+	at com.google.inject.internal.ProxyFactory$ProxyConstructor.newInstance(ProxyFactory.java:183)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:91)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:300)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
+	at com.google.inject.internal.SingletonScope$1.get(SingletonScope.java:169)
+	at com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:45)
+	at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:60)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1148)
+	at org.eclipse.sisu.wire.BeanProviders$7.get(BeanProviders.java:169)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:86)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:57)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:60)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:47)
+	at com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:40)
+	at com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:60)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:113)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:91)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:300)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
+	at com.google.inject.internal.SingletonScope$1.get(SingletonScope.java:169)
+	at com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:45)
+	at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:60)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1148)
+	... 37 common frames omitted
+Caused by: java.nio.file.AccessDeniedException: /nexus-data/etc/logback
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:397)
+	at java.base/java.nio.file.Files.createDirectory(Files.java:700)
+	at java.base/java.nio.file.Files.createAndCheckIsDirectory(Files.java:807)
+	at java.base/java.nio.file.Files.createDirectories(Files.java:793)
+	at org.sonatype.nexus.bootstrap.entrypoint.configuration.DirectoryHelper.mkdir(DirectoryHelper.java:32)
+	at org.sonatype.nexus.bootstrap.entrypoint.configuration.ApplicationDirectoriesImpl.mkdir(ApplicationDirectoriesImpl.java:117)
+	... 68 common frames omitted
+2025-06-12 19:51:51,674+0000 WARN  [JettyShutdownThread]  *SYSTEM org.eclipse.jetty.util.component.ContainerLifeCycle - Unable to destroy
+java.lang.IllegalStateException: !STOPPED
+	at org.eclipse.jetty.ee8.nested.HandlerWrapper.destroy(HandlerWrapper.java:119)
+	at org.eclipse.jetty.ee8.webapp.WebAppContext.destroy(WebAppContext.java:548)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.destroy(ContainerLifeCycle.java:228)
+	at org.eclipse.jetty.server.Handler$Abstract.destroy(Handler.java:507)
+	at org.eclipse.jetty.server.handler.ContextHandler.lambda$destroy$2(ContextHandler.java:1018)
+	at org.eclipse.jetty.server.handler.ContextHandler$ScopedContext.run(ContextHandler.java:1517)
+	at org.eclipse.jetty.server.handler.ContextHandler$ScopedContext.run(ContextHandler.java:1504)
+	at org.eclipse.jetty.server.handler.ContextHandler.destroy(ContextHandler.java:1018)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.destroy(ContainerLifeCycle.java:228)
+	at org.eclipse.jetty.server.Handler$Abstract.destroy(Handler.java:507)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.destroy(ContainerLifeCycle.java:228)
+	at org.eclipse.jetty.server.Handler$Abstract.destroy(Handler.java:507)
+	at org.eclipse.jetty.util.thread.ShutdownThread.run(ShutdownThread.java:142)
+2025-06-12 19:51:51,678+0000 INFO  [SpringApplicationShutdownHook]  *SYSTEM org.sonatype.nexus.bootstrap.jetty.JettyServer - Stopping
+2025-06-12 19:51:51,680+0000 INFO  [SpringApplicationShutdownHook]  *SYSTEM org.sonatype.nexus.bootstrap.jetty.JettyServer - Stopped
+2025-06-12 19:52:00,065+0000 INFO  [main]  *SYSTEM org.sonatype.nexus.bootstrap.application.SonatypeNexusRepositoryApplication - Starting SonatypeNexusRepositoryApplication v3.81.1-01 using Java 17.0.15 with PID 1 (/opt/sonatype/nexus/bin/sonatype-nexus-repository-3.81.1-01.jar started by nexus in /opt/sonatype/nexus)
+2025-06-12 19:52:00,082+0000 INFO  [main]  *SYSTEM org.sonatype.nexus.bootstrap.application.SonatypeNexusRepositoryApplication - No active profile set, falling back to 1 default profile: "default"
+2025-06-12 19:52:03,799+0000 INFO  [main]  *SYSTEM org.sonatype.nexus.spring.application.NexusProperties - nexus.properties: {ssl.etc=/opt/sonatype/nexus/etc/ssl, application-host=0.0.0.0, nexus-edition=nexus-pro-edition, nexus-context-path=/, karaf.home=/opt/sonatype/nexus, nexus.http.denyframe.enabled=true, karaf.etc=/opt/sonatype/nexus/etc/karaf, nexus.jwt.enabled=false, nexus.repository.proxy.enabled=true, nexus-args=/opt/sonatype/nexus/etc/jetty/jetty.xml,/opt/sonatype/nexus/etc/jetty/jetty-http.xml,/opt/sonatype/nexus/etc/jetty/jetty-requestlog.xml, nexus.session.enabled=true, application-port=8081, nexus.scripts.allowCreation=true, karaf.data=/nexus-data, nexus.repository.default=central, nexus.https.port=8443, logback.etc=/opt/sonatype/nexus/etc/logback, karaf.instances=/opt/sonatype/nexus/instances, fabric.etc=/opt/sonatype/nexus/etc/fabric, nexus.security.realm=default, nexus.http.port=8081, nexus-features=nexus-pro-feature, nexus.security.user.admin.password=admin123, nexus.onboarding.enabled=true, jetty.etc=/opt/sonatype/nexus/etc/jetty, karaf.base=/opt/sonatype/nexus, nexus.security.randompassword=false, nexus.data.dir=/nexus-data}
+2025-06-12 19:52:03,824+0000 INFO  [main]  *SYSTEM org.sonatype.nexus.bootstrap.edition.CommunityNexusEdition - Loading Community Edition
+2025-06-12 19:52:03,857+0000 INFO  [main]  *SYSTEM org.sonatype.nexus.bootstrap.application.Launcher - Java: 17.0.15, OpenJDK 64-Bit Server VM, Red Hat, Inc., 17.0.15+6-LTS
+2025-06-12 19:52:03,859+0000 INFO  [main]  *SYSTEM org.sonatype.nexus.bootstrap.application.Launcher - OS: Linux, 6.6.87.1-microsoft-standard-WSL2, amd64
+2025-06-12 19:52:03,860+0000 INFO  [main]  *SYSTEM org.sonatype.nexus.bootstrap.application.Launcher - User: nexus, en, /opt/sonatype/nexus
+2025-06-12 19:52:03,861+0000 INFO  [main]  *SYSTEM org.sonatype.nexus.bootstrap.application.Launcher - CWD: /opt/sonatype/nexus
+2025-06-12 19:52:03,912+0000 INFO  [main]  *SYSTEM org.sonatype.nexus.bootstrap.application.Launcher - TMP: /nexus-data/tmp
+2025-06-12 19:52:07,095+0000 INFO  [main]  *SYSTEM org.sonatype.nexus.bootstrap.jetty.JettyServer - Starting
+2025-06-12 19:52:07,162+0000 INFO  [main]  *SYSTEM org.sonatype.nexus.bootstrap.jetty.JettyServer - Applying configuration: file:/opt/sonatype/nexus/etc/jetty/jetty.xml
+2025-06-12 19:52:08,261+0000 INFO  [main]  *SYSTEM org.sonatype.nexus.bootstrap.jetty.JettyServer - Applying configuration: file:/opt/sonatype/nexus/etc/jetty/jetty-http.xml
+2025-06-12 19:52:08,366+0000 INFO  [main]  *SYSTEM org.sonatype.nexus.bootstrap.jetty.JettyServer - Applying configuration: file:/opt/sonatype/nexus/etc/jetty/jetty-requestlog.xml
+2025-06-12 19:52:08,456+0000 INFO  [jetty-main-1]  *SYSTEM org.sonatype.nexus.bootstrap.jetty.JettyServer - Starting: oejs.Server@5fdd97c1{STOPPED}[12.0.17,sto=5000]
+2025-06-12 19:52:08,458+0000 INFO  [main]  *SYSTEM org.sonatype.nexus.bootstrap.application.SonatypeNexusRepositoryApplication - Started SonatypeNexusRepositoryApplication in 9.829 seconds (process running for 13.855)
+2025-06-12 19:52:08,478+0000 INFO  [jetty-main-1]  *SYSTEM org.eclipse.jetty.server.Server - jetty-12.0.17; built: 2025-03-03T13:15:05.903Z; git: 14d19c268e4cb09afc312b5255a4cbb7a95c5cb6; jvm 17.0.15+6-LTS
+2025-06-12 19:52:09,089+0000 WARN  [jetty-main-1]  *SYSTEM org.eclipse.jetty.util.DeprecationWarning - Using @Deprecated Class org.sonatype.nexus.extender.NexusServletContextListener
+2025-06-12 19:52:09,148+0000 INFO  [jetty-main-1]  *SYSTEM org.eclipse.jetty.session.DefaultSessionIdManager - Session workerName=node0
+2025-06-12 19:52:09,965+0000 INFO  [jetty-main-1]  *SYSTEM org.sonatype.nexus.extender.guice.modules.DataAccessModule - Binding DAO classes to mybatis
+2025-06-12 19:52:10,914+0000 INFO  [jetty-main-1]  *SYSTEM org.sonatype.nexus.extender.sisu.modules.SisuAggregatedIndexModule - Binding sisu aggregated index classes
+2025-06-12 19:52:18,349+0000 INFO  [jetty-main-1]  *SYSTEM org.sonatype.nexus.internal.metrics.MetricsModule - Metrics support configured
+2025-06-12 19:52:29,637+0000 INFO  [jetty-main-1]  *SYSTEM org.sonatype.nexus.extender.guice.modules.MetricsRegistryModule - MetricsRegistryModule configured
+2025-06-12 19:52:35,373+0000 WARN  [Timer-0]  *SYSTEM java.util.prefs - Could not lock User prefs.  Unix error code 2.
+2025-06-12 19:52:35,375+0000 WARN  [Timer-0]  *SYSTEM java.util.prefs - Couldn't flush user prefs: java.util.prefs.BackingStoreException: Couldn't get file lock.
+2025-06-12 19:52:47,314+0000 ERROR [ForkJoinPool.commonPool-worker-1]  *SYSTEM org.sonatype.nexus.internal.node.datastore.LocalNodeAccess - Failed to determine hostname, using nodeId instead.
+2025-06-12 19:52:47,651+0000 INFO  [jetty-main-1]  *SYSTEM org.apache.shiro.nexus.NexusWebSessionManager - Global session timeout: 1800000 ms
+2025-06-12 19:52:47,653+0000 INFO  [jetty-main-1]  *SYSTEM org.apache.shiro.nexus.NexusWebSessionManager - Session-cookie prototype: name=NXSESSIONID, secure=true
+2025-06-12 19:52:48,016+0000 INFO  [jetty-main-1]  *SYSTEM org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2025-06-12 19:53:05,370+0000 WARN  [Timer-0]  *SYSTEM java.util.prefs - Could not lock User prefs.  Unix error code 2.
+2025-06-12 19:53:05,371+0000 WARN  [Timer-0]  *SYSTEM java.util.prefs - Couldn't flush user prefs: java.util.prefs.BackingStoreException: Couldn't get file lock.
+2025-06-12 19:53:08,904+0000 INFO  [jetty-main-1]  *SYSTEM org.sonatype.nexus.extender.NexusServletContextListener - Running lifecycle phases [KERNEL, STORAGE, RESTORE, UPGRADE, SCHEMAS, EVENTS, SECURITY, SERVICES, REPOSITORIES, CAPABILITIES, TASKS]
+2025-06-12 19:53:08,906+0000 INFO  [jetty-main-1]  *SYSTEM org.sonatype.nexus.extender.guice.NexusLifecycleManager - Indexing lifecycle managed components up to phase TASKS
+2025-06-12 19:53:08,910+0000 INFO  [jetty-main-1]  *SYSTEM org.sonatype.nexus.extender.guice.NexusLifecycleManager - Start KERNEL
+2025-06-12 19:53:08,942+0000 ERROR [jetty-main-1]  *SYSTEM org.sonatype.nexus.bootstrap.entrypoint.configuration.ApplicationDirectoriesImpl - Failed to create directory: /nexus-data/etc/logback
+2025-06-12 19:53:08,949+0000 ERROR [jetty-main-1]  *SYSTEM org.sonatype.nexus.extender.NexusServletContextListener - Failed to initialize context
+com.google.inject.ProvisionException: Unable to provision, see the following errors:
+
+1) [Guice/ErrorInCustomProvider]: RuntimeException: AccessDeniedException: /nexus-data/etc/logback
+  at nested:/opt/sonatype/nexus/bin/sonatype-nexus-repository-3.81.1-01.jar/!BOOT-INF/lib/nexus-base-3.81.1-01.jar!/
+      \_ installed by: NexusExtenderModule -> SisuAggregatedIndexModule -> SisuAggregatedIndexModule$1
+  while locating LogbackLoggerOverrides
+  while locating Object annotated with *
+  at LocatorWiring
+  at LogbackLogManager.<init>(LogbackLogManager.java:107)
+      \_ for 3rd parameter
+  at nested:/opt/sonatype/nexus/bin/sonatype-nexus-repository-3.81.1-01.jar/!BOOT-INF/lib/nexus-base-3.81.1-01.jar!/
+      \_ installed by: NexusExtenderModule -> SisuAggregatedIndexModule -> SisuAggregatedIndexModule$1
+  while locating LogbackLogManager
+  while locating Object annotated with *
+
+Learn more:
+  https://github.com/google/guice/wiki/ERROR_IN_CUSTOM_PROVIDER
+
+1 error
+
+======================
+Full classname legend:
+======================
+AccessDeniedException:       "java.nio.file.AccessDeniedException"
+LocatorWiring:               "org.eclipse.sisu.wire.LocatorWiring"
+LogbackLogManager:           "org.sonatype.nexus.internal.log.LogbackLogManager"
+LogbackLoggerOverrides:      "org.sonatype.nexus.internal.log.overrides.file.LogbackLoggerOverrides"
+NexusExtenderModule:         "org.sonatype.nexus.extender.guice.modules.NexusExtenderModule"
+SisuAggregatedIndexModule:   "org.sonatype.nexus.extender.sisu.modules.SisuAggregatedIndexModule"
+SisuAggregatedIndexModule$1: "org.sonatype.nexus.extender.sisu.modules.SisuAggregatedIndexModule$1"
+========================
+End of classname legend:
+========================
+
+	at com.google.inject.internal.InternalProvisionException.toProvisionException(InternalProvisionException.java:251)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1151)
+	at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:83)
+	at org.sonatype.nexus.extender.guice.NexusLifecycleManager.to(NexusLifecycleManager.java:135)
+	at org.sonatype.nexus.extender.NexusServletContextListener.moveToPhase(NexusServletContextListener.java:166)
+	at org.sonatype.nexus.extender.NexusServletContextListener.contextInitialized(NexusServletContextListener.java:101)
+	at org.eclipse.jetty.ee8.nested.ContextHandler.callContextInitialized(ContextHandler.java:786)
+	at org.eclipse.jetty.ee8.servlet.ServletContextHandler.callContextInitialized(ServletContextHandler.java:516)
+	at org.eclipse.jetty.ee8.nested.ContextHandler.contextInitialized(ContextHandler.java:735)
+	at org.eclipse.jetty.ee8.servlet.ServletHandler.initialize(ServletHandler.java:629)
+	at org.eclipse.jetty.ee8.servlet.ServletContextHandler.startContext(ServletContextHandler.java:311)
+	at org.eclipse.jetty.ee8.webapp.WebAppContext.startWebapp(WebAppContext.java:1195)
+	at org.eclipse.jetty.ee8.webapp.WebAppContext.startContext(WebAppContext.java:1165)
+	at org.eclipse.jetty.ee8.nested.ContextHandler.doStartInContext(ContextHandler.java:626)
+	at org.eclipse.jetty.server.handler.ContextHandler$ScopedContext.call(ContextHandler.java:1450)
+	at org.eclipse.jetty.ee8.nested.ContextHandler.doStart(ContextHandler.java:615)
+	at org.eclipse.jetty.ee8.servlet.ServletContextHandler.doStart(ServletContextHandler.java:243)
+	at org.eclipse.jetty.ee8.webapp.WebAppContext.doStart(WebAppContext.java:502)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:93)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:113)
+	at org.eclipse.jetty.server.Handler$Abstract.doStart(Handler.java:491)
+	at org.eclipse.jetty.server.handler.ContextHandler.lambda$doStart$0(ContextHandler.java:757)
+	at org.eclipse.jetty.server.handler.ContextHandler$ScopedContext.call(ContextHandler.java:1456)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:757)
+	at org.eclipse.jetty.ee8.nested.ContextHandler$CoreContextHandler.doStart(ContextHandler.java:2290)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:93)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:120)
+	at org.eclipse.jetty.server.Handler$Abstract.doStart(Handler.java:491)
+	at io.dropwizard.metrics.jetty12.AbstractInstrumentedHandler.doStart(AbstractInstrumentedHandler.java:149)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:93)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169)
+	at org.eclipse.jetty.server.Server.start(Server.java:641)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:120)
+	at org.eclipse.jetty.server.Handler$Abstract.doStart(Handler.java:491)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:582)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:93)
+	at org.sonatype.nexus.bootstrap.jetty.JettyServer$JettyMainThread.run(JettyServer.java:286)
+Caused by: java.lang.RuntimeException: java.nio.file.AccessDeniedException: /nexus-data/etc/logback
+	at org.sonatype.nexus.bootstrap.entrypoint.configuration.ApplicationDirectoriesImpl.mkdir(ApplicationDirectoriesImpl.java:123)
+	at org.sonatype.nexus.bootstrap.entrypoint.configuration.ApplicationDirectoriesImpl.resolve(ApplicationDirectoriesImpl.java:141)
+	at org.sonatype.nexus.bootstrap.entrypoint.configuration.ApplicationDirectoriesImpl.getWorkDirectory(ApplicationDirectoriesImpl.java:102)
+	at org.sonatype.nexus.bootstrap.entrypoint.configuration.ApplicationDirectoriesImpl.getWorkDirectory(ApplicationDirectoriesImpl.java:107)
+	at org.sonatype.nexus.internal.log.overrides.LogbackLoggerOverridesSupport.<init>(LogbackLoggerOverridesSupport.java:52)
+	at org.sonatype.nexus.internal.log.overrides.file.LogbackLoggerOverrides.<init>(LogbackLoggerOverrides.java:51)
+	at org.sonatype.nexus.internal.log.overrides.file.LogbackLoggerOverrides$$EnhancerByGuice$$b368c5e.<init>(<generated>)
+	at org.sonatype.nexus.internal.log.overrides.file.LogbackLoggerOverrides$$EnhancerByGuice$$b368c5e.GUICE$TRAMPOLINE(<generated>)
+	at com.google.inject.internal.ProxyFactory$ProxyConstructor.newInstance(ProxyFactory.java:183)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:91)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:300)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
+	at com.google.inject.internal.SingletonScope$1.get(SingletonScope.java:169)
+	at com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:45)
+	at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:60)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1148)
+	at org.eclipse.sisu.wire.BeanProviders$7.get(BeanProviders.java:169)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:86)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:57)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:60)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:47)
+	at com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:40)
+	at com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:60)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:113)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:91)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:300)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
+	at com.google.inject.internal.SingletonScope$1.get(SingletonScope.java:169)
+	at com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:45)
+	at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:60)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1148)
+	... 37 common frames omitted
+Caused by: java.nio.file.AccessDeniedException: /nexus-data/etc/logback
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:397)
+	at java.base/java.nio.file.Files.createDirectory(Files.java:700)
+	at java.base/java.nio.file.Files.createAndCheckIsDirectory(Files.java:807)
+	at java.base/java.nio.file.Files.createDirectories(Files.java:793)
+	at org.sonatype.nexus.bootstrap.entrypoint.configuration.DirectoryHelper.mkdir(DirectoryHelper.java:32)
+	at org.sonatype.nexus.bootstrap.entrypoint.configuration.ApplicationDirectoriesImpl.mkdir(ApplicationDirectoriesImpl.java:117)
+	... 68 common frames omitted
+2025-06-12 19:53:09,041+0000 WARN  [jetty-main-1]  *SYSTEM org.eclipse.jetty.ee8.webapp.WebAppContext - Failed startup of context oeje8w.WebAppContext@499186d6{Sonatype Nexus,/,null,false}
+com.google.inject.ProvisionException: Unable to provision, see the following errors:
+
+1) [Guice/ErrorInCustomProvider]: RuntimeException: AccessDeniedException: /nexus-data/etc/logback
+  at nested:/opt/sonatype/nexus/bin/sonatype-nexus-repository-3.81.1-01.jar/!BOOT-INF/lib/nexus-base-3.81.1-01.jar!/
+      \_ installed by: NexusExtenderModule -> SisuAggregatedIndexModule -> SisuAggregatedIndexModule$1
+  while locating LogbackLoggerOverrides
+  while locating Object annotated with *
+  at LocatorWiring
+  at LogbackLogManager.<init>(LogbackLogManager.java:107)
+      \_ for 3rd parameter
+  at nested:/opt/sonatype/nexus/bin/sonatype-nexus-repository-3.81.1-01.jar/!BOOT-INF/lib/nexus-base-3.81.1-01.jar!/
+      \_ installed by: NexusExtenderModule -> SisuAggregatedIndexModule -> SisuAggregatedIndexModule$1
+  while locating LogbackLogManager
+  while locating Object annotated with *
+
+Learn more:
+  https://github.com/google/guice/wiki/ERROR_IN_CUSTOM_PROVIDER
+
+1 error
+
+======================
+Full classname legend:
+======================
+AccessDeniedException:       "java.nio.file.AccessDeniedException"
+LocatorWiring:               "org.eclipse.sisu.wire.LocatorWiring"
+LogbackLogManager:           "org.sonatype.nexus.internal.log.LogbackLogManager"
+LogbackLoggerOverrides:      "org.sonatype.nexus.internal.log.overrides.file.LogbackLoggerOverrides"
+NexusExtenderModule:         "org.sonatype.nexus.extender.guice.modules.NexusExtenderModule"
+SisuAggregatedIndexModule:   "org.sonatype.nexus.extender.sisu.modules.SisuAggregatedIndexModule"
+SisuAggregatedIndexModule$1: "org.sonatype.nexus.extender.sisu.modules.SisuAggregatedIndexModule$1"
+========================
+End of classname legend:
+========================
+
+	at com.google.inject.internal.InternalProvisionException.toProvisionException(InternalProvisionException.java:251)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1151)
+	at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:83)
+	at org.sonatype.nexus.extender.guice.NexusLifecycleManager.to(NexusLifecycleManager.java:135)
+	at org.sonatype.nexus.extender.NexusServletContextListener.moveToPhase(NexusServletContextListener.java:166)
+	at org.sonatype.nexus.extender.NexusServletContextListener.contextInitialized(NexusServletContextListener.java:101)
+	at org.eclipse.jetty.ee8.nested.ContextHandler.callContextInitialized(ContextHandler.java:786)
+	at org.eclipse.jetty.ee8.servlet.ServletContextHandler.callContextInitialized(ServletContextHandler.java:516)
+	at org.eclipse.jetty.ee8.nested.ContextHandler.contextInitialized(ContextHandler.java:735)
+	at org.eclipse.jetty.ee8.servlet.ServletHandler.initialize(ServletHandler.java:629)
+	at org.eclipse.jetty.ee8.servlet.ServletContextHandler.startContext(ServletContextHandler.java:311)
+	at org.eclipse.jetty.ee8.webapp.WebAppContext.startWebapp(WebAppContext.java:1195)
+	at org.eclipse.jetty.ee8.webapp.WebAppContext.startContext(WebAppContext.java:1165)
+	at org.eclipse.jetty.ee8.nested.ContextHandler.doStartInContext(ContextHandler.java:626)
+	at org.eclipse.jetty.server.handler.ContextHandler$ScopedContext.call(ContextHandler.java:1450)
+	at org.eclipse.jetty.ee8.nested.ContextHandler.doStart(ContextHandler.java:615)
+	at org.eclipse.jetty.ee8.servlet.ServletContextHandler.doStart(ServletContextHandler.java:243)
+	at org.eclipse.jetty.ee8.webapp.WebAppContext.doStart(WebAppContext.java:502)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:93)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:113)
+	at org.eclipse.jetty.server.Handler$Abstract.doStart(Handler.java:491)
+	at org.eclipse.jetty.server.handler.ContextHandler.lambda$doStart$0(ContextHandler.java:757)
+	at org.eclipse.jetty.server.handler.ContextHandler$ScopedContext.call(ContextHandler.java:1456)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:757)
+	at org.eclipse.jetty.ee8.nested.ContextHandler$CoreContextHandler.doStart(ContextHandler.java:2290)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:93)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:120)
+	at org.eclipse.jetty.server.Handler$Abstract.doStart(Handler.java:491)
+	at io.dropwizard.metrics.jetty12.AbstractInstrumentedHandler.doStart(AbstractInstrumentedHandler.java:149)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:93)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169)
+	at org.eclipse.jetty.server.Server.start(Server.java:641)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:120)
+	at org.eclipse.jetty.server.Handler$Abstract.doStart(Handler.java:491)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:582)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:93)
+	at org.sonatype.nexus.bootstrap.jetty.JettyServer$JettyMainThread.run(JettyServer.java:286)
+Caused by: java.lang.RuntimeException: java.nio.file.AccessDeniedException: /nexus-data/etc/logback
+	at org.sonatype.nexus.bootstrap.entrypoint.configuration.ApplicationDirectoriesImpl.mkdir(ApplicationDirectoriesImpl.java:123)
+	at org.sonatype.nexus.bootstrap.entrypoint.configuration.ApplicationDirectoriesImpl.resolve(ApplicationDirectoriesImpl.java:141)
+	at org.sonatype.nexus.bootstrap.entrypoint.configuration.ApplicationDirectoriesImpl.getWorkDirectory(ApplicationDirectoriesImpl.java:102)
+	at org.sonatype.nexus.bootstrap.entrypoint.configuration.ApplicationDirectoriesImpl.getWorkDirectory(ApplicationDirectoriesImpl.java:107)
+	at org.sonatype.nexus.internal.log.overrides.LogbackLoggerOverridesSupport.<init>(LogbackLoggerOverridesSupport.java:52)
+	at org.sonatype.nexus.internal.log.overrides.file.LogbackLoggerOverrides.<init>(LogbackLoggerOverrides.java:51)
+	at org.sonatype.nexus.internal.log.overrides.file.LogbackLoggerOverrides$$EnhancerByGuice$$b368c5e.<init>(<generated>)
+	at org.sonatype.nexus.internal.log.overrides.file.LogbackLoggerOverrides$$EnhancerByGuice$$b368c5e.GUICE$TRAMPOLINE(<generated>)
+	at com.google.inject.internal.ProxyFactory$ProxyConstructor.newInstance(ProxyFactory.java:183)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:91)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:300)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
+	at com.google.inject.internal.SingletonScope$1.get(SingletonScope.java:169)
+	at com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:45)
+	at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:60)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1148)
+	at org.eclipse.sisu.wire.BeanProviders$7.get(BeanProviders.java:169)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:86)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:57)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:60)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:47)
+	at com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:40)
+	at com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:60)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:113)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:91)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:300)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
+	at com.google.inject.internal.SingletonScope$1.get(SingletonScope.java:169)
+	at com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:45)
+	at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:60)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1148)
+	... 37 common frames omitted
+Caused by: java.nio.file.AccessDeniedException: /nexus-data/etc/logback
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:397)
+	at java.base/java.nio.file.Files.createDirectory(Files.java:700)
+	at java.base/java.nio.file.Files.createAndCheckIsDirectory(Files.java:807)
+	at java.base/java.nio.file.Files.createDirectories(Files.java:793)
+	at org.sonatype.nexus.bootstrap.entrypoint.configuration.DirectoryHelper.mkdir(DirectoryHelper.java:32)
+	at org.sonatype.nexus.bootstrap.entrypoint.configuration.ApplicationDirectoriesImpl.mkdir(ApplicationDirectoriesImpl.java:117)
+	... 68 common frames omitted
+2025-06-12 19:53:09,056+0000 ERROR [jetty-main-1]  *SYSTEM org.sonatype.nexus.bootstrap.jetty.JettyServer - Failed to start
+com.google.inject.ProvisionException: Unable to provision, see the following errors:
+
+1) [Guice/ErrorInCustomProvider]: RuntimeException: AccessDeniedException: /nexus-data/etc/logback
+  at nested:/opt/sonatype/nexus/bin/sonatype-nexus-repository-3.81.1-01.jar/!BOOT-INF/lib/nexus-base-3.81.1-01.jar!/
+      \_ installed by: NexusExtenderModule -> SisuAggregatedIndexModule -> SisuAggregatedIndexModule$1
+  while locating LogbackLoggerOverrides
+  while locating Object annotated with *
+  at LocatorWiring
+  at LogbackLogManager.<init>(LogbackLogManager.java:107)
+      \_ for 3rd parameter
+  at nested:/opt/sonatype/nexus/bin/sonatype-nexus-repository-3.81.1-01.jar/!BOOT-INF/lib/nexus-base-3.81.1-01.jar!/
+      \_ installed by: NexusExtenderModule -> SisuAggregatedIndexModule -> SisuAggregatedIndexModule$1
+  while locating LogbackLogManager
+  while locating Object annotated with *
+
+Learn more:
+  https://github.com/google/guice/wiki/ERROR_IN_CUSTOM_PROVIDER
+
+1 error
+
+======================
+Full classname legend:
+======================
+AccessDeniedException:       "java.nio.file.AccessDeniedException"
+LocatorWiring:               "org.eclipse.sisu.wire.LocatorWiring"
+LogbackLogManager:           "org.sonatype.nexus.internal.log.LogbackLogManager"
+LogbackLoggerOverrides:      "org.sonatype.nexus.internal.log.overrides.file.LogbackLoggerOverrides"
+NexusExtenderModule:         "org.sonatype.nexus.extender.guice.modules.NexusExtenderModule"
+SisuAggregatedIndexModule:   "org.sonatype.nexus.extender.sisu.modules.SisuAggregatedIndexModule"
+SisuAggregatedIndexModule$1: "org.sonatype.nexus.extender.sisu.modules.SisuAggregatedIndexModule$1"
+========================
+End of classname legend:
+========================
+
+	at com.google.inject.internal.InternalProvisionException.toProvisionException(InternalProvisionException.java:251)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1151)
+	at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:83)
+	at org.sonatype.nexus.extender.guice.NexusLifecycleManager.to(NexusLifecycleManager.java:135)
+	at org.sonatype.nexus.extender.NexusServletContextListener.moveToPhase(NexusServletContextListener.java:166)
+	at org.sonatype.nexus.extender.NexusServletContextListener.contextInitialized(NexusServletContextListener.java:101)
+	at org.eclipse.jetty.ee8.nested.ContextHandler.callContextInitialized(ContextHandler.java:786)
+	at org.eclipse.jetty.ee8.servlet.ServletContextHandler.callContextInitialized(ServletContextHandler.java:516)
+	at org.eclipse.jetty.ee8.nested.ContextHandler.contextInitialized(ContextHandler.java:735)
+	at org.eclipse.jetty.ee8.servlet.ServletHandler.initialize(ServletHandler.java:629)
+	at org.eclipse.jetty.ee8.servlet.ServletContextHandler.startContext(ServletContextHandler.java:311)
+	at org.eclipse.jetty.ee8.webapp.WebAppContext.startWebapp(WebAppContext.java:1195)
+	at org.eclipse.jetty.ee8.webapp.WebAppContext.startContext(WebAppContext.java:1165)
+	at org.eclipse.jetty.ee8.nested.ContextHandler.doStartInContext(ContextHandler.java:626)
+	at org.eclipse.jetty.server.handler.ContextHandler$ScopedContext.call(ContextHandler.java:1450)
+	at org.eclipse.jetty.ee8.nested.ContextHandler.doStart(ContextHandler.java:615)
+	at org.eclipse.jetty.ee8.servlet.ServletContextHandler.doStart(ServletContextHandler.java:243)
+	at org.eclipse.jetty.ee8.webapp.WebAppContext.doStart(WebAppContext.java:502)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:93)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:113)
+	at org.eclipse.jetty.server.Handler$Abstract.doStart(Handler.java:491)
+	at org.eclipse.jetty.server.handler.ContextHandler.lambda$doStart$0(ContextHandler.java:757)
+	at org.eclipse.jetty.server.handler.ContextHandler$ScopedContext.call(ContextHandler.java:1456)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:757)
+	at org.eclipse.jetty.ee8.nested.ContextHandler$CoreContextHandler.doStart(ContextHandler.java:2290)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:93)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:120)
+	at org.eclipse.jetty.server.Handler$Abstract.doStart(Handler.java:491)
+	at io.dropwizard.metrics.jetty12.AbstractInstrumentedHandler.doStart(AbstractInstrumentedHandler.java:149)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:93)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169)
+	at org.eclipse.jetty.server.Server.start(Server.java:641)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:120)
+	at org.eclipse.jetty.server.Handler$Abstract.doStart(Handler.java:491)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:582)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:93)
+	at org.sonatype.nexus.bootstrap.jetty.JettyServer$JettyMainThread.run(JettyServer.java:286)
+Caused by: java.lang.RuntimeException: java.nio.file.AccessDeniedException: /nexus-data/etc/logback
+	at org.sonatype.nexus.bootstrap.entrypoint.configuration.ApplicationDirectoriesImpl.mkdir(ApplicationDirectoriesImpl.java:123)
+	at org.sonatype.nexus.bootstrap.entrypoint.configuration.ApplicationDirectoriesImpl.resolve(ApplicationDirectoriesImpl.java:141)
+	at org.sonatype.nexus.bootstrap.entrypoint.configuration.ApplicationDirectoriesImpl.getWorkDirectory(ApplicationDirectoriesImpl.java:102)
+	at org.sonatype.nexus.bootstrap.entrypoint.configuration.ApplicationDirectoriesImpl.getWorkDirectory(ApplicationDirectoriesImpl.java:107)
+	at org.sonatype.nexus.internal.log.overrides.LogbackLoggerOverridesSupport.<init>(LogbackLoggerOverridesSupport.java:52)
+	at org.sonatype.nexus.internal.log.overrides.file.LogbackLoggerOverrides.<init>(LogbackLoggerOverrides.java:51)
+	at org.sonatype.nexus.internal.log.overrides.file.LogbackLoggerOverrides$$EnhancerByGuice$$b368c5e.<init>(<generated>)
+	at org.sonatype.nexus.internal.log.overrides.file.LogbackLoggerOverrides$$EnhancerByGuice$$b368c5e.GUICE$TRAMPOLINE(<generated>)
+	at com.google.inject.internal.ProxyFactory$ProxyConstructor.newInstance(ProxyFactory.java:183)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:91)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:300)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
+	at com.google.inject.internal.SingletonScope$1.get(SingletonScope.java:169)
+	at com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:45)
+	at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:60)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1148)
+	at org.eclipse.sisu.wire.BeanProviders$7.get(BeanProviders.java:169)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:86)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:57)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:60)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:47)
+	at com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:40)
+	at com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:60)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:113)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:91)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:300)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
+	at com.google.inject.internal.SingletonScope$1.get(SingletonScope.java:169)
+	at com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:45)
+	at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:60)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1148)
+	... 37 common frames omitted
+Caused by: java.nio.file.AccessDeniedException: /nexus-data/etc/logback
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:397)
+	at java.base/java.nio.file.Files.createDirectory(Files.java:700)
+	at java.base/java.nio.file.Files.createAndCheckIsDirectory(Files.java:807)
+	at java.base/java.nio.file.Files.createDirectories(Files.java:793)
+	at org.sonatype.nexus.bootstrap.entrypoint.configuration.DirectoryHelper.mkdir(DirectoryHelper.java:32)
+	at org.sonatype.nexus.bootstrap.entrypoint.configuration.ApplicationDirectoriesImpl.mkdir(ApplicationDirectoriesImpl.java:117)
+	... 68 common frames omitted
+2025-06-12 19:53:09,076+0000 WARN  [JettyShutdownThread]  *SYSTEM org.eclipse.jetty.util.component.ContainerLifeCycle - Unable to destroy
+java.lang.IllegalStateException: !STOPPED
+	at org.eclipse.jetty.ee8.nested.HandlerWrapper.destroy(HandlerWrapper.java:119)
+	at org.eclipse.jetty.ee8.webapp.WebAppContext.destroy(WebAppContext.java:548)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.destroy(ContainerLifeCycle.java:228)
+	at org.eclipse.jetty.server.Handler$Abstract.destroy(Handler.java:507)
+	at org.eclipse.jetty.server.handler.ContextHandler.lambda$destroy$2(ContextHandler.java:1018)
+	at org.eclipse.jetty.server.handler.ContextHandler$ScopedContext.run(ContextHandler.java:1517)
+	at org.eclipse.jetty.server.handler.ContextHandler$ScopedContext.run(ContextHandler.java:1504)
+	at org.eclipse.jetty.server.handler.ContextHandler.destroy(ContextHandler.java:1018)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.destroy(ContainerLifeCycle.java:228)
+	at org.eclipse.jetty.server.Handler$Abstract.destroy(Handler.java:507)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.destroy(ContainerLifeCycle.java:228)
+	at org.eclipse.jetty.server.Handler$Abstract.destroy(Handler.java:507)
+	at org.eclipse.jetty.util.thread.ShutdownThread.run(ShutdownThread.java:142)
+2025-06-12 19:53:09,079+0000 INFO  [SpringApplicationShutdownHook]  *SYSTEM org.sonatype.nexus.bootstrap.jetty.JettyServer - Stopping
+2025-06-12 19:53:09,086+0000 INFO  [SpringApplicationShutdownHook]  *SYSTEM org.sonatype.nexus.bootstrap.jetty.JettyServer - Stopped
+2025-06-12 19:53:17,643+0000 INFO  [main]  *SYSTEM org.sonatype.nexus.bootstrap.application.SonatypeNexusRepositoryApplication - Starting SonatypeNexusRepositoryApplication v3.81.1-01 using Java 17.0.15 with PID 1 (/opt/sonatype/nexus/bin/sonatype-nexus-repository-3.81.1-01.jar started by nexus in /opt/sonatype/nexus)
+2025-06-12 19:53:17,654+0000 INFO  [main]  *SYSTEM org.sonatype.nexus.bootstrap.application.SonatypeNexusRepositoryApplication - No active profile set, falling back to 1 default profile: "default"
+2025-06-12 19:53:20,906+0000 INFO  [main]  *SYSTEM org.sonatype.nexus.spring.application.NexusProperties - nexus.properties: {ssl.etc=/opt/sonatype/nexus/etc/ssl, application-host=0.0.0.0, nexus-edition=nexus-pro-edition, nexus-context-path=/, karaf.home=/opt/sonatype/nexus, nexus.http.denyframe.enabled=true, karaf.etc=/opt/sonatype/nexus/etc/karaf, nexus.jwt.enabled=false, nexus.repository.proxy.enabled=true, nexus-args=/opt/sonatype/nexus/etc/jetty/jetty.xml,/opt/sonatype/nexus/etc/jetty/jetty-http.xml,/opt/sonatype/nexus/etc/jetty/jetty-requestlog.xml, nexus.session.enabled=true, application-port=8081, nexus.scripts.allowCreation=true, karaf.data=/nexus-data, nexus.repository.default=central, nexus.https.port=8443, logback.etc=/opt/sonatype/nexus/etc/logback, karaf.instances=/opt/sonatype/nexus/instances, fabric.etc=/opt/sonatype/nexus/etc/fabric, nexus.security.realm=default, nexus.http.port=8081, nexus-features=nexus-pro-feature, nexus.security.user.admin.password=admin123, nexus.onboarding.enabled=true, jetty.etc=/opt/sonatype/nexus/etc/jetty, karaf.base=/opt/sonatype/nexus, nexus.security.randompassword=false, nexus.data.dir=/nexus-data}
+2025-06-12 19:53:20,929+0000 INFO  [main]  *SYSTEM org.sonatype.nexus.bootstrap.edition.CommunityNexusEdition - Loading Community Edition
+2025-06-12 19:53:20,963+0000 INFO  [main]  *SYSTEM org.sonatype.nexus.bootstrap.application.Launcher - Java: 17.0.15, OpenJDK 64-Bit Server VM, Red Hat, Inc., 17.0.15+6-LTS
+2025-06-12 19:53:20,964+0000 INFO  [main]  *SYSTEM org.sonatype.nexus.bootstrap.application.Launcher - OS: Linux, 6.6.87.1-microsoft-standard-WSL2, amd64
+2025-06-12 19:53:20,966+0000 INFO  [main]  *SYSTEM org.sonatype.nexus.bootstrap.application.Launcher - User: nexus, en, /opt/sonatype/nexus
+2025-06-12 19:53:20,967+0000 INFO  [main]  *SYSTEM org.sonatype.nexus.bootstrap.application.Launcher - CWD: /opt/sonatype/nexus
+2025-06-12 19:53:21,014+0000 INFO  [main]  *SYSTEM org.sonatype.nexus.bootstrap.application.Launcher - TMP: /nexus-data/tmp
+2025-06-12 19:53:23,516+0000 INFO  [main]  *SYSTEM org.sonatype.nexus.bootstrap.jetty.JettyServer - Starting
+2025-06-12 19:53:23,581+0000 INFO  [main]  *SYSTEM org.sonatype.nexus.bootstrap.jetty.JettyServer - Applying configuration: file:/opt/sonatype/nexus/etc/jetty/jetty.xml
+2025-06-12 19:53:24,760+0000 INFO  [main]  *SYSTEM org.sonatype.nexus.bootstrap.jetty.JettyServer - Applying configuration: file:/opt/sonatype/nexus/etc/jetty/jetty-http.xml
+2025-06-12 19:53:24,884+0000 INFO  [main]  *SYSTEM org.sonatype.nexus.bootstrap.jetty.JettyServer - Applying configuration: file:/opt/sonatype/nexus/etc/jetty/jetty-requestlog.xml
+2025-06-12 19:53:24,996+0000 INFO  [jetty-main-1]  *SYSTEM org.sonatype.nexus.bootstrap.jetty.JettyServer - Starting: oejs.Server@11810917{STOPPED}[12.0.17,sto=5000]
+2025-06-12 19:53:24,998+0000 INFO  [main]  *SYSTEM org.sonatype.nexus.bootstrap.application.SonatypeNexusRepositoryApplication - Started SonatypeNexusRepositoryApplication in 8.595 seconds (process running for 13.102)
+2025-06-12 19:53:25,016+0000 INFO  [jetty-main-1]  *SYSTEM org.eclipse.jetty.server.Server - jetty-12.0.17; built: 2025-03-03T13:15:05.903Z; git: 14d19c268e4cb09afc312b5255a4cbb7a95c5cb6; jvm 17.0.15+6-LTS
+2025-06-12 19:53:25,667+0000 WARN  [jetty-main-1]  *SYSTEM org.eclipse.jetty.util.DeprecationWarning - Using @Deprecated Class org.sonatype.nexus.extender.NexusServletContextListener
+2025-06-12 19:53:25,722+0000 INFO  [jetty-main-1]  *SYSTEM org.eclipse.jetty.session.DefaultSessionIdManager - Session workerName=node0
+2025-06-12 19:53:26,610+0000 INFO  [jetty-main-1]  *SYSTEM org.sonatype.nexus.extender.guice.modules.DataAccessModule - Binding DAO classes to mybatis
+2025-06-12 19:53:27,525+0000 INFO  [jetty-main-1]  *SYSTEM org.sonatype.nexus.extender.sisu.modules.SisuAggregatedIndexModule - Binding sisu aggregated index classes
+2025-06-12 19:53:33,692+0000 INFO  [jetty-main-1]  *SYSTEM org.sonatype.nexus.internal.metrics.MetricsModule - Metrics support configured
+2025-06-12 19:53:43,704+0000 INFO  [jetty-main-1]  *SYSTEM org.sonatype.nexus.extender.guice.modules.MetricsRegistryModule - MetricsRegistryModule configured
+2025-06-12 19:53:52,474+0000 WARN  [Timer-0]  *SYSTEM java.util.prefs - Could not lock User prefs.  Unix error code 2.
+2025-06-12 19:53:52,476+0000 WARN  [Timer-0]  *SYSTEM java.util.prefs - Couldn't flush user prefs: java.util.prefs.BackingStoreException: Couldn't get file lock.
+2025-06-12 19:53:54,701+0000 ERROR [ForkJoinPool.commonPool-worker-1]  *SYSTEM org.sonatype.nexus.internal.node.datastore.LocalNodeAccess - Failed to determine hostname, using nodeId instead.
+2025-06-12 19:53:55,294+0000 INFO  [jetty-main-1]  *SYSTEM org.apache.shiro.nexus.NexusWebSessionManager - Global session timeout: 1800000 ms
+2025-06-12 19:53:55,296+0000 INFO  [jetty-main-1]  *SYSTEM org.apache.shiro.nexus.NexusWebSessionManager - Session-cookie prototype: name=NXSESSIONID, secure=true
+2025-06-12 19:53:55,490+0000 INFO  [jetty-main-1]  *SYSTEM org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2025-06-12 19:54:13,803+0000 INFO  [jetty-main-1]  *SYSTEM org.sonatype.nexus.extender.NexusServletContextListener - Running lifecycle phases [KERNEL, STORAGE, RESTORE, UPGRADE, SCHEMAS, EVENTS, SECURITY, SERVICES, REPOSITORIES, CAPABILITIES, TASKS]
+2025-06-12 19:54:13,805+0000 INFO  [jetty-main-1]  *SYSTEM org.sonatype.nexus.extender.guice.NexusLifecycleManager - Indexing lifecycle managed components up to phase TASKS
+2025-06-12 19:54:13,806+0000 INFO  [jetty-main-1]  *SYSTEM org.sonatype.nexus.extender.guice.NexusLifecycleManager - Start KERNEL
+2025-06-12 19:54:13,835+0000 ERROR [jetty-main-1]  *SYSTEM org.sonatype.nexus.bootstrap.entrypoint.configuration.ApplicationDirectoriesImpl - Failed to create directory: /nexus-data/etc/logback
+2025-06-12 19:54:13,844+0000 ERROR [jetty-main-1]  *SYSTEM org.sonatype.nexus.extender.NexusServletContextListener - Failed to initialize context
+com.google.inject.ProvisionException: Unable to provision, see the following errors:
+
+1) [Guice/ErrorInCustomProvider]: RuntimeException: AccessDeniedException: /nexus-data/etc/logback
+  at nested:/opt/sonatype/nexus/bin/sonatype-nexus-repository-3.81.1-01.jar/!BOOT-INF/lib/nexus-base-3.81.1-01.jar!/
+      \_ installed by: NexusExtenderModule -> SisuAggregatedIndexModule -> SisuAggregatedIndexModule$1
+  while locating LogbackLoggerOverrides
+  while locating Object annotated with *
+  at LocatorWiring
+  at LogbackLogManager.<init>(LogbackLogManager.java:107)
+      \_ for 3rd parameter
+  at nested:/opt/sonatype/nexus/bin/sonatype-nexus-repository-3.81.1-01.jar/!BOOT-INF/lib/nexus-base-3.81.1-01.jar!/
+      \_ installed by: NexusExtenderModule -> SisuAggregatedIndexModule -> SisuAggregatedIndexModule$1
+  while locating LogbackLogManager
+  while locating Object annotated with *
+
+Learn more:
+  https://github.com/google/guice/wiki/ERROR_IN_CUSTOM_PROVIDER
+
+1 error
+
+======================
+Full classname legend:
+======================
+AccessDeniedException:       "java.nio.file.AccessDeniedException"
+LocatorWiring:               "org.eclipse.sisu.wire.LocatorWiring"
+LogbackLogManager:           "org.sonatype.nexus.internal.log.LogbackLogManager"
+LogbackLoggerOverrides:      "org.sonatype.nexus.internal.log.overrides.file.LogbackLoggerOverrides"
+NexusExtenderModule:         "org.sonatype.nexus.extender.guice.modules.NexusExtenderModule"
+SisuAggregatedIndexModule:   "org.sonatype.nexus.extender.sisu.modules.SisuAggregatedIndexModule"
+SisuAggregatedIndexModule$1: "org.sonatype.nexus.extender.sisu.modules.SisuAggregatedIndexModule$1"
+========================
+End of classname legend:
+========================
+
+	at com.google.inject.internal.InternalProvisionException.toProvisionException(InternalProvisionException.java:251)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1151)
+	at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:83)
+	at org.sonatype.nexus.extender.guice.NexusLifecycleManager.to(NexusLifecycleManager.java:135)
+	at org.sonatype.nexus.extender.NexusServletContextListener.moveToPhase(NexusServletContextListener.java:166)
+	at org.sonatype.nexus.extender.NexusServletContextListener.contextInitialized(NexusServletContextListener.java:101)
+	at org.eclipse.jetty.ee8.nested.ContextHandler.callContextInitialized(ContextHandler.java:786)
+	at org.eclipse.jetty.ee8.servlet.ServletContextHandler.callContextInitialized(ServletContextHandler.java:516)
+	at org.eclipse.jetty.ee8.nested.ContextHandler.contextInitialized(ContextHandler.java:735)
+	at org.eclipse.jetty.ee8.servlet.ServletHandler.initialize(ServletHandler.java:629)
+	at org.eclipse.jetty.ee8.servlet.ServletContextHandler.startContext(ServletContextHandler.java:311)
+	at org.eclipse.jetty.ee8.webapp.WebAppContext.startWebapp(WebAppContext.java:1195)
+	at org.eclipse.jetty.ee8.webapp.WebAppContext.startContext(WebAppContext.java:1165)
+	at org.eclipse.jetty.ee8.nested.ContextHandler.doStartInContext(ContextHandler.java:626)
+	at org.eclipse.jetty.server.handler.ContextHandler$ScopedContext.call(ContextHandler.java:1450)
+	at org.eclipse.jetty.ee8.nested.ContextHandler.doStart(ContextHandler.java:615)
+	at org.eclipse.jetty.ee8.servlet.ServletContextHandler.doStart(ServletContextHandler.java:243)
+	at org.eclipse.jetty.ee8.webapp.WebAppContext.doStart(WebAppContext.java:502)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:93)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:113)
+	at org.eclipse.jetty.server.Handler$Abstract.doStart(Handler.java:491)
+	at org.eclipse.jetty.server.handler.ContextHandler.lambda$doStart$0(ContextHandler.java:757)
+	at org.eclipse.jetty.server.handler.ContextHandler$ScopedContext.call(ContextHandler.java:1456)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:757)
+	at org.eclipse.jetty.ee8.nested.ContextHandler$CoreContextHandler.doStart(ContextHandler.java:2290)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:93)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:120)
+	at org.eclipse.jetty.server.Handler$Abstract.doStart(Handler.java:491)
+	at io.dropwizard.metrics.jetty12.AbstractInstrumentedHandler.doStart(AbstractInstrumentedHandler.java:149)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:93)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169)
+	at org.eclipse.jetty.server.Server.start(Server.java:641)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:120)
+	at org.eclipse.jetty.server.Handler$Abstract.doStart(Handler.java:491)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:582)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:93)
+	at org.sonatype.nexus.bootstrap.jetty.JettyServer$JettyMainThread.run(JettyServer.java:286)
+Caused by: java.lang.RuntimeException: java.nio.file.AccessDeniedException: /nexus-data/etc/logback
+	at org.sonatype.nexus.bootstrap.entrypoint.configuration.ApplicationDirectoriesImpl.mkdir(ApplicationDirectoriesImpl.java:123)
+	at org.sonatype.nexus.bootstrap.entrypoint.configuration.ApplicationDirectoriesImpl.resolve(ApplicationDirectoriesImpl.java:141)
+	at org.sonatype.nexus.bootstrap.entrypoint.configuration.ApplicationDirectoriesImpl.getWorkDirectory(ApplicationDirectoriesImpl.java:102)
+	at org.sonatype.nexus.bootstrap.entrypoint.configuration.ApplicationDirectoriesImpl.getWorkDirectory(ApplicationDirectoriesImpl.java:107)
+	at org.sonatype.nexus.internal.log.overrides.LogbackLoggerOverridesSupport.<init>(LogbackLoggerOverridesSupport.java:52)
+	at org.sonatype.nexus.internal.log.overrides.file.LogbackLoggerOverrides.<init>(LogbackLoggerOverrides.java:51)
+	at org.sonatype.nexus.internal.log.overrides.file.LogbackLoggerOverrides$$EnhancerByGuice$$b305976.<init>(<generated>)
+	at org.sonatype.nexus.internal.log.overrides.file.LogbackLoggerOverrides$$EnhancerByGuice$$b305976.GUICE$TRAMPOLINE(<generated>)
+	at com.google.inject.internal.ProxyFactory$ProxyConstructor.newInstance(ProxyFactory.java:183)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:91)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:300)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
+	at com.google.inject.internal.SingletonScope$1.get(SingletonScope.java:169)
+	at com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:45)
+	at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:60)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1148)
+	at org.eclipse.sisu.wire.BeanProviders$7.get(BeanProviders.java:169)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:86)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:57)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:60)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:47)
+	at com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:40)
+	at com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:60)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:113)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:91)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:300)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
+	at com.google.inject.internal.SingletonScope$1.get(SingletonScope.java:169)
+	at com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:45)
+	at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:60)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1148)
+	... 37 common frames omitted
+Caused by: java.nio.file.AccessDeniedException: /nexus-data/etc/logback
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:397)
+	at java.base/java.nio.file.Files.createDirectory(Files.java:700)
+	at java.base/java.nio.file.Files.createAndCheckIsDirectory(Files.java:807)
+	at java.base/java.nio.file.Files.createDirectories(Files.java:793)
+	at org.sonatype.nexus.bootstrap.entrypoint.configuration.DirectoryHelper.mkdir(DirectoryHelper.java:32)
+	at org.sonatype.nexus.bootstrap.entrypoint.configuration.ApplicationDirectoriesImpl.mkdir(ApplicationDirectoriesImpl.java:117)
+	... 68 common frames omitted
+2025-06-12 19:54:13,927+0000 WARN  [jetty-main-1]  *SYSTEM org.eclipse.jetty.ee8.webapp.WebAppContext - Failed startup of context oeje8w.WebAppContext@b53b72b{Sonatype Nexus,/,null,false}
+com.google.inject.ProvisionException: Unable to provision, see the following errors:
+
+1) [Guice/ErrorInCustomProvider]: RuntimeException: AccessDeniedException: /nexus-data/etc/logback
+  at nested:/opt/sonatype/nexus/bin/sonatype-nexus-repository-3.81.1-01.jar/!BOOT-INF/lib/nexus-base-3.81.1-01.jar!/
+      \_ installed by: NexusExtenderModule -> SisuAggregatedIndexModule -> SisuAggregatedIndexModule$1
+  while locating LogbackLoggerOverrides
+  while locating Object annotated with *
+  at LocatorWiring
+  at LogbackLogManager.<init>(LogbackLogManager.java:107)
+      \_ for 3rd parameter
+  at nested:/opt/sonatype/nexus/bin/sonatype-nexus-repository-3.81.1-01.jar/!BOOT-INF/lib/nexus-base-3.81.1-01.jar!/
+      \_ installed by: NexusExtenderModule -> SisuAggregatedIndexModule -> SisuAggregatedIndexModule$1
+  while locating LogbackLogManager
+  while locating Object annotated with *
+
+Learn more:
+  https://github.com/google/guice/wiki/ERROR_IN_CUSTOM_PROVIDER
+
+1 error
+
+======================
+Full classname legend:
+======================
+AccessDeniedException:       "java.nio.file.AccessDeniedException"
+LocatorWiring:               "org.eclipse.sisu.wire.LocatorWiring"
+LogbackLogManager:           "org.sonatype.nexus.internal.log.LogbackLogManager"
+LogbackLoggerOverrides:      "org.sonatype.nexus.internal.log.overrides.file.LogbackLoggerOverrides"
+NexusExtenderModule:         "org.sonatype.nexus.extender.guice.modules.NexusExtenderModule"
+SisuAggregatedIndexModule:   "org.sonatype.nexus.extender.sisu.modules.SisuAggregatedIndexModule"
+SisuAggregatedIndexModule$1: "org.sonatype.nexus.extender.sisu.modules.SisuAggregatedIndexModule$1"
+========================
+End of classname legend:
+========================
+
+	at com.google.inject.internal.InternalProvisionException.toProvisionException(InternalProvisionException.java:251)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1151)
+	at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:83)
+	at org.sonatype.nexus.extender.guice.NexusLifecycleManager.to(NexusLifecycleManager.java:135)
+	at org.sonatype.nexus.extender.NexusServletContextListener.moveToPhase(NexusServletContextListener.java:166)
+	at org.sonatype.nexus.extender.NexusServletContextListener.contextInitialized(NexusServletContextListener.java:101)
+	at org.eclipse.jetty.ee8.nested.ContextHandler.callContextInitialized(ContextHandler.java:786)
+	at org.eclipse.jetty.ee8.servlet.ServletContextHandler.callContextInitialized(ServletContextHandler.java:516)
+	at org.eclipse.jetty.ee8.nested.ContextHandler.contextInitialized(ContextHandler.java:735)
+	at org.eclipse.jetty.ee8.servlet.ServletHandler.initialize(ServletHandler.java:629)
+	at org.eclipse.jetty.ee8.servlet.ServletContextHandler.startContext(ServletContextHandler.java:311)
+	at org.eclipse.jetty.ee8.webapp.WebAppContext.startWebapp(WebAppContext.java:1195)
+	at org.eclipse.jetty.ee8.webapp.WebAppContext.startContext(WebAppContext.java:1165)
+	at org.eclipse.jetty.ee8.nested.ContextHandler.doStartInContext(ContextHandler.java:626)
+	at org.eclipse.jetty.server.handler.ContextHandler$ScopedContext.call(ContextHandler.java:1450)
+	at org.eclipse.jetty.ee8.nested.ContextHandler.doStart(ContextHandler.java:615)
+	at org.eclipse.jetty.ee8.servlet.ServletContextHandler.doStart(ServletContextHandler.java:243)
+	at org.eclipse.jetty.ee8.webapp.WebAppContext.doStart(WebAppContext.java:502)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:93)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:113)
+	at org.eclipse.jetty.server.Handler$Abstract.doStart(Handler.java:491)
+	at org.eclipse.jetty.server.handler.ContextHandler.lambda$doStart$0(ContextHandler.java:757)
+	at org.eclipse.jetty.server.handler.ContextHandler$ScopedContext.call(ContextHandler.java:1456)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:757)
+	at org.eclipse.jetty.ee8.nested.ContextHandler$CoreContextHandler.doStart(ContextHandler.java:2290)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:93)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:120)
+	at org.eclipse.jetty.server.Handler$Abstract.doStart(Handler.java:491)
+	at io.dropwizard.metrics.jetty12.AbstractInstrumentedHandler.doStart(AbstractInstrumentedHandler.java:149)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:93)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169)
+	at org.eclipse.jetty.server.Server.start(Server.java:641)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:120)
+	at org.eclipse.jetty.server.Handler$Abstract.doStart(Handler.java:491)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:582)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:93)
+	at org.sonatype.nexus.bootstrap.jetty.JettyServer$JettyMainThread.run(JettyServer.java:286)
+Caused by: java.lang.RuntimeException: java.nio.file.AccessDeniedException: /nexus-data/etc/logback
+	at org.sonatype.nexus.bootstrap.entrypoint.configuration.ApplicationDirectoriesImpl.mkdir(ApplicationDirectoriesImpl.java:123)
+	at org.sonatype.nexus.bootstrap.entrypoint.configuration.ApplicationDirectoriesImpl.resolve(ApplicationDirectoriesImpl.java:141)
+	at org.sonatype.nexus.bootstrap.entrypoint.configuration.ApplicationDirectoriesImpl.getWorkDirectory(ApplicationDirectoriesImpl.java:102)
+	at org.sonatype.nexus.bootstrap.entrypoint.configuration.ApplicationDirectoriesImpl.getWorkDirectory(ApplicationDirectoriesImpl.java:107)
+	at org.sonatype.nexus.internal.log.overrides.LogbackLoggerOverridesSupport.<init>(LogbackLoggerOverridesSupport.java:52)
+	at org.sonatype.nexus.internal.log.overrides.file.LogbackLoggerOverrides.<init>(LogbackLoggerOverrides.java:51)
+	at org.sonatype.nexus.internal.log.overrides.file.LogbackLoggerOverrides$$EnhancerByGuice$$b305976.<init>(<generated>)
+	at org.sonatype.nexus.internal.log.overrides.file.LogbackLoggerOverrides$$EnhancerByGuice$$b305976.GUICE$TRAMPOLINE(<generated>)
+	at com.google.inject.internal.ProxyFactory$ProxyConstructor.newInstance(ProxyFactory.java:183)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:91)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:300)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
+	at com.google.inject.internal.SingletonScope$1.get(SingletonScope.java:169)
+	at com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:45)
+	at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:60)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1148)
+	at org.eclipse.sisu.wire.BeanProviders$7.get(BeanProviders.java:169)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:86)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:57)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:60)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:47)
+	at com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:40)
+	at com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:60)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:113)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:91)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:300)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
+	at com.google.inject.internal.SingletonScope$1.get(SingletonScope.java:169)
+	at com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:45)
+	at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:60)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1148)
+	... 37 common frames omitted
+Caused by: java.nio.file.AccessDeniedException: /nexus-data/etc/logback
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:397)
+	at java.base/java.nio.file.Files.createDirectory(Files.java:700)
+	at java.base/java.nio.file.Files.createAndCheckIsDirectory(Files.java:807)
+	at java.base/java.nio.file.Files.createDirectories(Files.java:793)
+	at org.sonatype.nexus.bootstrap.entrypoint.configuration.DirectoryHelper.mkdir(DirectoryHelper.java:32)
+	at org.sonatype.nexus.bootstrap.entrypoint.configuration.ApplicationDirectoriesImpl.mkdir(ApplicationDirectoriesImpl.java:117)
+	... 68 common frames omitted
+2025-06-12 19:54:13,944+0000 ERROR [jetty-main-1]  *SYSTEM org.sonatype.nexus.bootstrap.jetty.JettyServer - Failed to start
+com.google.inject.ProvisionException: Unable to provision, see the following errors:
+
+1) [Guice/ErrorInCustomProvider]: RuntimeException: AccessDeniedException: /nexus-data/etc/logback
+  at nested:/opt/sonatype/nexus/bin/sonatype-nexus-repository-3.81.1-01.jar/!BOOT-INF/lib/nexus-base-3.81.1-01.jar!/
+      \_ installed by: NexusExtenderModule -> SisuAggregatedIndexModule -> SisuAggregatedIndexModule$1
+  while locating LogbackLoggerOverrides
+  while locating Object annotated with *
+  at LocatorWiring
+  at LogbackLogManager.<init>(LogbackLogManager.java:107)
+      \_ for 3rd parameter
+  at nested:/opt/sonatype/nexus/bin/sonatype-nexus-repository-3.81.1-01.jar/!BOOT-INF/lib/nexus-base-3.81.1-01.jar!/
+      \_ installed by: NexusExtenderModule -> SisuAggregatedIndexModule -> SisuAggregatedIndexModule$1
+  while locating LogbackLogManager
+  while locating Object annotated with *
+
+Learn more:
+  https://github.com/google/guice/wiki/ERROR_IN_CUSTOM_PROVIDER
+
+1 error
+
+======================
+Full classname legend:
+======================
+AccessDeniedException:       "java.nio.file.AccessDeniedException"
+LocatorWiring:               "org.eclipse.sisu.wire.LocatorWiring"
+LogbackLogManager:           "org.sonatype.nexus.internal.log.LogbackLogManager"
+LogbackLoggerOverrides:      "org.sonatype.nexus.internal.log.overrides.file.LogbackLoggerOverrides"
+NexusExtenderModule:         "org.sonatype.nexus.extender.guice.modules.NexusExtenderModule"
+SisuAggregatedIndexModule:   "org.sonatype.nexus.extender.sisu.modules.SisuAggregatedIndexModule"
+SisuAggregatedIndexModule$1: "org.sonatype.nexus.extender.sisu.modules.SisuAggregatedIndexModule$1"
+========================
+End of classname legend:
+========================
+
+	at com.google.inject.internal.InternalProvisionException.toProvisionException(InternalProvisionException.java:251)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1151)
+	at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:83)
+	at org.sonatype.nexus.extender.guice.NexusLifecycleManager.to(NexusLifecycleManager.java:135)
+	at org.sonatype.nexus.extender.NexusServletContextListener.moveToPhase(NexusServletContextListener.java:166)
+	at org.sonatype.nexus.extender.NexusServletContextListener.contextInitialized(NexusServletContextListener.java:101)
+	at org.eclipse.jetty.ee8.nested.ContextHandler.callContextInitialized(ContextHandler.java:786)
+	at org.eclipse.jetty.ee8.servlet.ServletContextHandler.callContextInitialized(ServletContextHandler.java:516)
+	at org.eclipse.jetty.ee8.nested.ContextHandler.contextInitialized(ContextHandler.java:735)
+	at org.eclipse.jetty.ee8.servlet.ServletHandler.initialize(ServletHandler.java:629)
+	at org.eclipse.jetty.ee8.servlet.ServletContextHandler.startContext(ServletContextHandler.java:311)
+	at org.eclipse.jetty.ee8.webapp.WebAppContext.startWebapp(WebAppContext.java:1195)
+	at org.eclipse.jetty.ee8.webapp.WebAppContext.startContext(WebAppContext.java:1165)
+	at org.eclipse.jetty.ee8.nested.ContextHandler.doStartInContext(ContextHandler.java:626)
+	at org.eclipse.jetty.server.handler.ContextHandler$ScopedContext.call(ContextHandler.java:1450)
+	at org.eclipse.jetty.ee8.nested.ContextHandler.doStart(ContextHandler.java:615)
+	at org.eclipse.jetty.ee8.servlet.ServletContextHandler.doStart(ServletContextHandler.java:243)
+	at org.eclipse.jetty.ee8.webapp.WebAppContext.doStart(WebAppContext.java:502)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:93)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:113)
+	at org.eclipse.jetty.server.Handler$Abstract.doStart(Handler.java:491)
+	at org.eclipse.jetty.server.handler.ContextHandler.lambda$doStart$0(ContextHandler.java:757)
+	at org.eclipse.jetty.server.handler.ContextHandler$ScopedContext.call(ContextHandler.java:1456)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:757)
+	at org.eclipse.jetty.ee8.nested.ContextHandler$CoreContextHandler.doStart(ContextHandler.java:2290)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:93)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:120)
+	at org.eclipse.jetty.server.Handler$Abstract.doStart(Handler.java:491)
+	at io.dropwizard.metrics.jetty12.AbstractInstrumentedHandler.doStart(AbstractInstrumentedHandler.java:149)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:93)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169)
+	at org.eclipse.jetty.server.Server.start(Server.java:641)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:120)
+	at org.eclipse.jetty.server.Handler$Abstract.doStart(Handler.java:491)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:582)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:93)
+	at org.sonatype.nexus.bootstrap.jetty.JettyServer$JettyMainThread.run(JettyServer.java:286)
+Caused by: java.lang.RuntimeException: java.nio.file.AccessDeniedException: /nexus-data/etc/logback
+	at org.sonatype.nexus.bootstrap.entrypoint.configuration.ApplicationDirectoriesImpl.mkdir(ApplicationDirectoriesImpl.java:123)
+	at org.sonatype.nexus.bootstrap.entrypoint.configuration.ApplicationDirectoriesImpl.resolve(ApplicationDirectoriesImpl.java:141)
+	at org.sonatype.nexus.bootstrap.entrypoint.configuration.ApplicationDirectoriesImpl.getWorkDirectory(ApplicationDirectoriesImpl.java:102)
+	at org.sonatype.nexus.bootstrap.entrypoint.configuration.ApplicationDirectoriesImpl.getWorkDirectory(ApplicationDirectoriesImpl.java:107)
+	at org.sonatype.nexus.internal.log.overrides.LogbackLoggerOverridesSupport.<init>(LogbackLoggerOverridesSupport.java:52)
+	at org.sonatype.nexus.internal.log.overrides.file.LogbackLoggerOverrides.<init>(LogbackLoggerOverrides.java:51)
+	at org.sonatype.nexus.internal.log.overrides.file.LogbackLoggerOverrides$$EnhancerByGuice$$b305976.<init>(<generated>)
+	at org.sonatype.nexus.internal.log.overrides.file.LogbackLoggerOverrides$$EnhancerByGuice$$b305976.GUICE$TRAMPOLINE(<generated>)
+	at com.google.inject.internal.ProxyFactory$ProxyConstructor.newInstance(ProxyFactory.java:183)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:91)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:300)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
+	at com.google.inject.internal.SingletonScope$1.get(SingletonScope.java:169)
+	at com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:45)
+	at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:60)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1148)
+	at org.eclipse.sisu.wire.BeanProviders$7.get(BeanProviders.java:169)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:86)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:57)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:60)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:47)
+	at com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:40)
+	at com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:60)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:113)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:91)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:300)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
+	at com.google.inject.internal.SingletonScope$1.get(SingletonScope.java:169)
+	at com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:45)
+	at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:60)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1148)
+	... 37 common frames omitted
+Caused by: java.nio.file.AccessDeniedException: /nexus-data/etc/logback
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:397)
+	at java.base/java.nio.file.Files.createDirectory(Files.java:700)
+	at java.base/java.nio.file.Files.createAndCheckIsDirectory(Files.java:807)
+	at java.base/java.nio.file.Files.createDirectories(Files.java:793)
+	at org.sonatype.nexus.bootstrap.entrypoint.configuration.DirectoryHelper.mkdir(DirectoryHelper.java:32)
+	at org.sonatype.nexus.bootstrap.entrypoint.configuration.ApplicationDirectoriesImpl.mkdir(ApplicationDirectoriesImpl.java:117)
+	... 68 common frames omitted
+2025-06-12 19:54:13,958+0000 INFO  [SpringApplicationShutdownHook]  *SYSTEM org.sonatype.nexus.bootstrap.jetty.JettyServer - Stopping
+2025-06-12 19:54:13,958+0000 WARN  [JettyShutdownThread]  *SYSTEM org.eclipse.jetty.util.component.ContainerLifeCycle - Unable to destroy
+java.lang.IllegalStateException: !STOPPED
+	at org.eclipse.jetty.ee8.nested.HandlerWrapper.destroy(HandlerWrapper.java:119)
+	at org.eclipse.jetty.ee8.webapp.WebAppContext.destroy(WebAppContext.java:548)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.destroy(ContainerLifeCycle.java:228)
+	at org.eclipse.jetty.server.Handler$Abstract.destroy(Handler.java:507)
+	at org.eclipse.jetty.server.handler.ContextHandler.lambda$destroy$2(ContextHandler.java:1018)
+	at org.eclipse.jetty.server.handler.ContextHandler$ScopedContext.run(ContextHandler.java:1517)
+	at org.eclipse.jetty.server.handler.ContextHandler$ScopedContext.run(ContextHandler.java:1504)
+	at org.eclipse.jetty.server.handler.ContextHandler.destroy(ContextHandler.java:1018)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.destroy(ContainerLifeCycle.java:228)
+	at org.eclipse.jetty.server.Handler$Abstract.destroy(Handler.java:507)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.destroy(ContainerLifeCycle.java:228)
+	at org.eclipse.jetty.server.Handler$Abstract.destroy(Handler.java:507)
+	at org.eclipse.jetty.util.thread.ShutdownThread.run(ShutdownThread.java:142)
+2025-06-12 19:54:13,960+0000 INFO  [SpringApplicationShutdownHook]  *SYSTEM org.sonatype.nexus.bootstrap.jetty.JettyServer - Stopped
+2025-06-12 19:54:22,343+0000 INFO  [main]  *SYSTEM org.sonatype.nexus.bootstrap.application.SonatypeNexusRepositoryApplication - Starting SonatypeNexusRepositoryApplication v3.81.1-01 using Java 17.0.15 with PID 1 (/opt/sonatype/nexus/bin/sonatype-nexus-repository-3.81.1-01.jar started by nexus in /opt/sonatype/nexus)
+2025-06-12 19:54:22,356+0000 INFO  [main]  *SYSTEM org.sonatype.nexus.bootstrap.application.SonatypeNexusRepositoryApplication - No active profile set, falling back to 1 default profile: "default"
+2025-06-12 19:54:25,890+0000 INFO  [main]  *SYSTEM org.sonatype.nexus.spring.application.NexusProperties - nexus.properties: {ssl.etc=/opt/sonatype/nexus/etc/ssl, application-host=0.0.0.0, nexus-edition=nexus-pro-edition, nexus-context-path=/, karaf.home=/opt/sonatype/nexus, nexus.http.denyframe.enabled=true, karaf.etc=/opt/sonatype/nexus/etc/karaf, nexus.jwt.enabled=false, nexus.repository.proxy.enabled=true, nexus-args=/opt/sonatype/nexus/etc/jetty/jetty.xml,/opt/sonatype/nexus/etc/jetty/jetty-http.xml,/opt/sonatype/nexus/etc/jetty/jetty-requestlog.xml, nexus.session.enabled=true, application-port=8081, nexus.scripts.allowCreation=true, karaf.data=/nexus-data, nexus.repository.default=central, nexus.https.port=8443, logback.etc=/opt/sonatype/nexus/etc/logback, karaf.instances=/opt/sonatype/nexus/instances, fabric.etc=/opt/sonatype/nexus/etc/fabric, nexus.security.realm=default, nexus.http.port=8081, nexus-features=nexus-pro-feature, nexus.security.user.admin.password=admin123, nexus.onboarding.enabled=true, jetty.etc=/opt/sonatype/nexus/etc/jetty, karaf.base=/opt/sonatype/nexus, nexus.security.randompassword=false, nexus.data.dir=/nexus-data}
+2025-06-12 19:54:25,911+0000 INFO  [main]  *SYSTEM org.sonatype.nexus.bootstrap.edition.CommunityNexusEdition - Loading Community Edition
+2025-06-12 19:54:25,950+0000 INFO  [main]  *SYSTEM org.sonatype.nexus.bootstrap.application.Launcher - Java: 17.0.15, OpenJDK 64-Bit Server VM, Red Hat, Inc., 17.0.15+6-LTS
+2025-06-12 19:54:25,952+0000 INFO  [main]  *SYSTEM org.sonatype.nexus.bootstrap.application.Launcher - OS: Linux, 6.6.87.1-microsoft-standard-WSL2, amd64
+2025-06-12 19:54:25,953+0000 INFO  [main]  *SYSTEM org.sonatype.nexus.bootstrap.application.Launcher - User: nexus, en, /opt/sonatype/nexus
+2025-06-12 19:54:25,955+0000 INFO  [main]  *SYSTEM org.sonatype.nexus.bootstrap.application.Launcher - CWD: /opt/sonatype/nexus
+2025-06-12 19:54:26,009+0000 INFO  [main]  *SYSTEM org.sonatype.nexus.bootstrap.application.Launcher - TMP: /nexus-data/tmp
+2025-06-12 19:54:29,358+0000 INFO  [main]  *SYSTEM org.sonatype.nexus.bootstrap.jetty.JettyServer - Starting
+2025-06-12 19:54:29,435+0000 INFO  [main]  *SYSTEM org.sonatype.nexus.bootstrap.jetty.JettyServer - Applying configuration: file:/opt/sonatype/nexus/etc/jetty/jetty.xml
+2025-06-12 19:54:30,952+0000 INFO  [main]  *SYSTEM org.sonatype.nexus.bootstrap.jetty.JettyServer - Applying configuration: file:/opt/sonatype/nexus/etc/jetty/jetty-http.xml
+2025-06-12 19:54:31,070+0000 INFO  [main]  *SYSTEM org.sonatype.nexus.bootstrap.jetty.JettyServer - Applying configuration: file:/opt/sonatype/nexus/etc/jetty/jetty-requestlog.xml
+2025-06-12 19:54:31,188+0000 INFO  [jetty-main-1]  *SYSTEM org.sonatype.nexus.bootstrap.jetty.JettyServer - Starting: oejs.Server@4a31ed12{STOPPED}[12.0.17,sto=5000]
+2025-06-12 19:54:31,191+0000 INFO  [main]  *SYSTEM org.sonatype.nexus.bootstrap.application.SonatypeNexusRepositoryApplication - Started SonatypeNexusRepositoryApplication in 10.163 seconds (process running for 14.167)
+2025-06-12 19:54:31,212+0000 INFO  [jetty-main-1]  *SYSTEM org.eclipse.jetty.server.Server - jetty-12.0.17; built: 2025-03-03T13:15:05.903Z; git: 14d19c268e4cb09afc312b5255a4cbb7a95c5cb6; jvm 17.0.15+6-LTS
+2025-06-12 19:54:31,896+0000 WARN  [jetty-main-1]  *SYSTEM org.eclipse.jetty.util.DeprecationWarning - Using @Deprecated Class org.sonatype.nexus.extender.NexusServletContextListener
+2025-06-12 19:54:31,964+0000 INFO  [jetty-main-1]  *SYSTEM org.eclipse.jetty.session.DefaultSessionIdManager - Session workerName=node0
+2025-06-12 19:54:32,842+0000 INFO  [jetty-main-1]  *SYSTEM org.sonatype.nexus.extender.guice.modules.DataAccessModule - Binding DAO classes to mybatis
+2025-06-12 19:54:33,897+0000 INFO  [jetty-main-1]  *SYSTEM org.sonatype.nexus.extender.sisu.modules.SisuAggregatedIndexModule - Binding sisu aggregated index classes
+2025-06-12 19:54:41,159+0000 INFO  [jetty-main-1]  *SYSTEM org.sonatype.nexus.internal.metrics.MetricsModule - Metrics support configured
+2025-06-12 19:54:50,584+0000 INFO  [jetty-main-1]  *SYSTEM org.sonatype.nexus.extender.guice.modules.MetricsRegistryModule - MetricsRegistryModule configured
+2025-06-12 19:54:53,653+0000 INFO  [SpringApplicationShutdownHook]  *SYSTEM org.sonatype.nexus.bootstrap.jetty.JettyServer - Stopping
+2025-06-12 19:54:53,654+0000 INFO  [SpringApplicationShutdownHook]  *SYSTEM org.sonatype.nexus.bootstrap.jetty.JettyServer - Stopping: oejs.Server@4a31ed12{STARTING}[12.0.17,sto=5000]
+2025-06-12 19:55:02,510+0000 ERROR [ForkJoinPool.commonPool-worker-1]  *SYSTEM org.sonatype.nexus.internal.node.datastore.LocalNodeAccess - Failed to determine hostname, using nodeId instead.
+2025-06-12 19:55:02,961+0000 INFO  [jetty-main-1]  *SYSTEM org.apache.shiro.nexus.NexusWebSessionManager - Global session timeout: 1800000 ms
+2025-06-12 19:55:02,963+0000 INFO  [jetty-main-1]  *SYSTEM org.apache.shiro.nexus.NexusWebSessionManager - Session-cookie prototype: name=NXSESSIONID, secure=true
+2025-06-12 19:55:03,156+0000 INFO  [jetty-main-1]  *SYSTEM org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
