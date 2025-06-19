@@ -1,0 +1,3 @@
+[18/Jun/2025:14:59:00 +0000] - "HEAD https://links.sonatype.com/products/nexus/outreach/community/3.81.1-01/en/anonymous HTTP/1.1" 302 0 1036 [pool-2-thread-3]
+[18/Jun/2025:14:59:03 +0000] - "HEAD https://download.sonatype.com/nexus/outreach/community-en-all-anonymous.zip HTTP/1.1" 302 0 3648 [pool-2-thread-3]
+[18/Jun/2025:14:59:05 +0000] - "HEAD https://sonatype-download.global.ssl.fastly.net/nexus/outreach/community-en-all-anonymous.zip HTTP/1.1" 302 0 1374 [pool-2-thread-3]

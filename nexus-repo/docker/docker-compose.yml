@@ -1,0 +1,13 @@
+version: '3'
+services:
+  nexus:
+    image: sonatype/nexus3:latest
+    container_name: nexus
+    ports:
+      - "8081:8081"
+    volumes:
+      - ../data:/nexus-data
+      - ../config/nexus.properties:/nexus-data/etc/nexus.properties
+    environment:
+      - INSTALL4J_ADD_VM_PARAMS=-Xms2703m -Xmx2703m -XX:MaxDirectMemorySize=2703m
+    restart: unless-stopped

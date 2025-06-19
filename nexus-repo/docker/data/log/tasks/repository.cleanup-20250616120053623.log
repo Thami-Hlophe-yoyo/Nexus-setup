@@ -1,0 +1,10 @@
+2025-06-16 12:00:53,625+0000 INFO  [quartz-8-thread-19]  *TASK org.sonatype.nexus.cleanup.internal.task.CleanupTask - Task information:
+2025-06-16 12:00:53,646+0000 INFO  [quartz-8-thread-19]  *TASK org.sonatype.nexus.cleanup.internal.task.CleanupTask -  ID: 2e042b29-2c79-4197-87f5-b1e546fcf8e2
+2025-06-16 12:00:53,646+0000 INFO  [quartz-8-thread-19]  *TASK org.sonatype.nexus.cleanup.internal.task.CleanupTask -  Type: repository.cleanup
+2025-06-16 12:00:53,647+0000 INFO  [quartz-8-thread-19]  *TASK org.sonatype.nexus.cleanup.internal.task.CleanupTask -  Name: Cleanup service
+2025-06-16 12:00:53,648+0000 INFO  [quartz-8-thread-19]  *TASK org.sonatype.nexus.cleanup.internal.task.CleanupTask -  Description: Run repository cleanup
+2025-06-16 12:00:53,648+0000 INFO  [quartz-8-thread-19]  *TASK org.sonatype.nexus.cleanup.internal.task.CleanupTask - Task configuration: {.name=Cleanup service, lastRunState.runStarted=1749842888263, .id=2e042b29-2c79-4197-87f5-b1e546fcf8e2, .typeName=Admin - Cleanup repositories using their associated policies, .visible=true, .typeId=repository.cleanup, lastRunState.endState=OK, .updated=2025-06-12T19:58:12.510Z, .recoverable=false, .message=Run repository cleanup, lastRunState.runDuration=388, .exposed=false, .created=2025-06-12T19:58:12.510Z}
+2025-06-16 12:00:53,669+0000 INFO  [quartz-8-thread-19]  *TASK org.sonatype.nexus.cleanup.internal.task.CleanupTask - Starting cleanup
+2025-06-16 12:00:53,671+0000 INFO  [quartz-8-thread-19]  *TASK org.sonatype.nexus.cleanup.internal.content.service.CleanupServiceImpl - 0 assets cleaned up across all repositories
+2025-06-16 12:00:53,672+0000 INFO  [quartz-8-thread-19]  *TASK org.sonatype.nexus.cleanup.internal.task.CleanupTask - Cleanup finished
+2025-06-16 12:00:53,673+0000 INFO  [quartz-8-thread-19]  *TASK org.sonatype.nexus.cleanup.internal.task.CleanupTask - Task complete
